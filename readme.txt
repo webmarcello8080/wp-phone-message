@@ -1,8 +1,8 @@
 === WP Phone Message ===
 Contributors: webmarcello
-Tags: message, form, whatsapp, shortcode, widget
+Tags: message, form, whatsapp, shortcode, widget, phone, text
 Requires at least: 4.5.13
-Tested up to: 5.5.3
+Tested up to: 5.6
 Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -88,6 +88,9 @@ e.g.
 
 
 == Changelog ==
+
+= 1.0.7 =
+* Send phone number to JS through wp_localize
 
 = 1.0.6 =
 * Cleaning phone number and international prefix

@@ -60,5 +60,8 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             update_option( 'wp-phone-message-form-message', $message);
         }
 
+        public function getFullPhoneNumber(){
+            return get_option( 'wp-phone-message-full-phone-number' );
+        }
     }
 }

@@ -19,7 +19,6 @@ if(get_option('wp-phone-message-email-active')){
 
 $shortcode_form .= '<textarea class="wp-phone-message-message" id="wp-phone-message-message" placeholder="' . get_option('wp-phone-message-textarea') . '" required ></textarea>';
 $shortcode_form .= '<p class="whatapp-error" id="whatapp-error" ></p>';
-$shortcode_form .= '<input hidden="text" id="wp-phone-message-full-phone-number" value="' . get_option('wp-phone-message-full-phone-number') . '" />';
 $shortcode_form .= '<input type="submit" class="wp-phone-message-button" id="wp-phone-message-button" value="' . get_option('wp-phone-message-button') . '" />';
 $shortcode_form .= '</form>';
 $shortcode_form .= '</div>';

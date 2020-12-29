@@ -21,9 +21,9 @@ foreach ( glob( plugin_dir_path( __FILE__ ) .'includes/*.php') as $filename)
 if ( !function_exists( 'wp_phone_message_loader' ) ) {
     function wp_phone_message_loader(){
         if( is_admin() ){
-            $WpPhoneMessageAdmin = new WpPhoneMessageAdmin;
+            new WpPhoneMessageAdmin;
         }
-        $WpPhoneMessageShortcode = new WpPhoneMessageShortcode;
+        new WpPhoneMessageShortcode;
     }
     add_action('plugins_loaded', 'wp_phone_message_loader');
 }

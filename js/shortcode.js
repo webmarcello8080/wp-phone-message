@@ -1,8 +1,9 @@
 jQuery(document).ready(function ($) {
 
+    var fullTelephone = wp_phone_message_data.fullPhoneNumber;
+
     $("#whatapp-form").submit(function (e) {
         e.preventDefault();
-        var fullTelephone = $('#wp-phone-message-full-phone-number').val();
         var message = $('#wp-phone-message-message').val();
         var name = $('#wp-phone-message-name').val();
         var address = $('#wp-phone-message-address').val();
@@ -21,7 +22,6 @@ jQuery(document).ready(function ($) {
 
     $("#whatapp-widget-form").submit(function (e) {
         e.preventDefault();
-        var fullTelephone = $('#wp-phone-message-widget-full-phone-number').val();
         var message = $('#wp-phone-message-widget-message').val();
         var name = $('#wp-phone-message-widget-name').val();
         var address = $('#wp-phone-message-widget-address').val();
