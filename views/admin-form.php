@@ -5,7 +5,7 @@
 <div class="wrap">
       <h1 class="admin-page-title"><?= esc_html( get_admin_page_title() ); ?></h1>
 
-      <form method="post" action="<?= esc_html( admin_url( 'admin-post.php' ) ); ?>">
+      <form method="post" action="<?= esc_html( admin_url( 'admin-post.php' ) ); ?>?">
 
             <div class="form-description">
                   Using WP Phone Message is very simple and it doens't require any API Key or registration.<br />
@@ -263,7 +263,7 @@
                   <input type="hidden" id="wp-phone-message-full-phone-number"
                         value="<?= get_option('wp-phone-message-full-phone-number'); ?>" />
             </div>
-
+            <input type="hidden" name="action" value="wp-phone-message-form-message">
             <?php
                 wp_nonce_field( 'wp-phone-message-settings-save', 'wp-phone-message-form-message' );
                 submit_button();
