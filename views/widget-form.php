@@ -9,7 +9,7 @@
             echo '<input type="text" class="wp-phone-message-extra" id="wp-phone-message-widget-extra" placeholder="' . get_option('wp-phone-message-extra-widget') . '"  ' . get_option('wp-phone-message-extra-mandatory-widget') . ' />';
         }
         if(get_option('wp-phone-message-phone-active-widget')){
-            echo '<input type="text" class="wp-phone-message-phone" id="wp-phone-message-widget-phone" placeholder="' . get_option('wp-phone-message-phone-widget') . '"  ' . get_option('wp-phone-message-phone-mandatory-widget') . ' />';
+            echo '<input type="tel" class="wp-phone-message-phone" id="wp-phone-message-widget-phone" placeholder="' . get_option('wp-phone-message-phone-widget') . '"  ' . get_option('wp-phone-message-phone-mandatory-widget') . ' />';
         }
         if(get_option('wp-phone-message-email-active-widget')){
             echo '<input type="email" class="wp-phone-message-email" id="wp-phone-message-widget-email" placeholder="' . get_option('wp-phone-message-email-widget') . '"  ' . get_option('wp-phone-message-email-mandatory-widget') . ' />';

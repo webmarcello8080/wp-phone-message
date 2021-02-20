@@ -37,9 +37,17 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     background-color: #e8eeef;
-    color: #8a97a0;
+    color: #0e101a;
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+.whatapp-form .wp-phone-message-message::placeholder, 
+.whatapp-form .wp-phone-message-name::placeholder, 
+.whatapp-form .wp-phone-message-phone::placeholder,
+.whatapp-form .wp-phone-message-extra::placeholder,
+.whatapp-form .wp-phone-message-email::placeholder {
+    color: #0e101a;
+    opacity: 0.6;
 }
 .whatapp-form .wp-phone-message-message {
     height: 100px;
