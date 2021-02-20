@@ -42,6 +42,10 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $email_active_widget = sanitize_text_field( $args['wp-phone-message-email-active-widget'] );
             $email_mandatory_widget = sanitize_text_field( $args['wp-phone-message-email-mandatory-widget'] );
 
+            if( !wp_phone_message_wpm_fs()->can_use_premium_code()){
+                $textarea = $textarea_widget = '';
+            }
+
             $fullPhoneNumber = (int) str_replace(' ', '', $prefix) . ltrim(str_replace(' ', '', $phone), '0') ;
 
             update_option( 'wp-phone-message-phone-number', $phone );
