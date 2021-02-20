@@ -6,13 +6,13 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         var message = $('#wp-phone-message-message').val();
         var name = $('#wp-phone-message-name').val();
-        var address = $('#wp-phone-message-address').val();
+        var extra = $('#wp-phone-message-extra').val();
         var phone = $('#wp-phone-message-phone').val();
         var email = $('#wp-phone-message-email').val();
         var title = $('#wp-phone-message-title').val();
 
         if (whatappValidation(fullTelephone, 'whatapp-error')) {
-            final_message = whatappCreateFinalMessage(name, address, phone, email, message);
+            final_message = whatappCreateFinalMessage(name, extra, phone, email, message);
             var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + final_message;
 
             popupwindow(whatappUrl, title, 1000, 700);
@@ -24,12 +24,12 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         var message = $('#wp-phone-message-widget-message').val();
         var name = $('#wp-phone-message-widget-name').val();
-        var address = $('#wp-phone-message-widget-address').val();
+        var extra = $('#wp-phone-message-widget-extra').val();
         var phone = $('#wp-phone-message-widget-phone').val();
         var email = $('#wp-phone-message-widget-email').val();
 
         if (whatappValidation(fullTelephone, 'whatapp-widget-error')) {
-            final_message = whatappCreateFinalMessage(name, address, phone, email, message);
+            final_message = whatappCreateFinalMessage(name, extra, phone, email, message);
             var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + final_message;
 
             popupwindow(whatappUrl, 'Whatsapp Me', 1000, 700);
@@ -58,13 +58,13 @@ jQuery(document).ready(function ($) {
         $("#" + errorTarget).text(errorMessage);
     }
 
-    function whatappCreateFinalMessage(name, address, phone, email, message) {
+    function whatappCreateFinalMessage(name, extra, phone, email, message) {
 
         final_message = '';
         if (name !== undefined)
             final_message += name + ' %0a';
-        if (address !== undefined)
-            final_message += address + ' %0a';
+        if (extra !== undefined)
+            final_message += extra + ' %0a';
         if (phone !== undefined)
             final_message += phone + ' %0a';
         if (email !== undefined)

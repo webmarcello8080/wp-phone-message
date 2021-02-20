@@ -5,8 +5,8 @@
         if(get_option('wp-phone-message-name-active-widget')){
             echo '<input type="text" class="wp-phone-message-name" id="wp-phone-message-widget-name" placeholder="' . get_option('wp-phone-message-name-widget') . '"  ' . get_option('wp-phone-message-name-mandatory-widget') . ' />';
         }
-        if(get_option('wp-phone-message-address-active-widget')){
-            echo '<input type="text" class="wp-phone-message-address" id="wp-phone-message-widget-address" placeholder="' . get_option('wp-phone-message-address-widget') . '"  ' . get_option('wp-phone-message-address-mandatory-widget') . ' />';
+        if(get_option('wp-phone-message-extra-active-widget')){
+            echo '<input type="text" class="wp-phone-message-extra" id="wp-phone-message-widget-extra" placeholder="' . get_option('wp-phone-message-extra-widget') . '"  ' . get_option('wp-phone-message-extra-mandatory-widget') . ' />';
         }
         if(get_option('wp-phone-message-phone-active-widget')){
             echo '<input type="text" class="wp-phone-message-phone" id="wp-phone-message-widget-phone" placeholder="' . get_option('wp-phone-message-phone-widget') . '"  ' . get_option('wp-phone-message-phone-mandatory-widget') . ' />';

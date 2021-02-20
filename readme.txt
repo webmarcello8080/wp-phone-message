@@ -21,11 +21,11 @@ WP Phone Message is a Wordpress plugin that gives the possibility to render a si
 * Enter form text
 * Enter form bottom text
 * Possibility to add name field in shortcode form
-* Possibility to add address field in shortcode form
+* Possibility to add extra field in shortcode form
 * Possibility to add phone number field in shortcode form
 * Possibility to add email address field in shortcode form
 * Possibility to add name field in widget form
-* Possibility to add address field in widget form
+* Possibility to add extra field in widget form
 * Possibility to add phone number field in widget form
 * Possibility to add email address field in widget form
 * Making fields mandatory
@@ -36,7 +36,7 @@ WP Phone Message is a Wordpress plugin that gives the possibility to render a si
 * Enter the form title
 * Enter form text
 * Possibility to add name field
-* Possibility to add address field
+* Possibility to add extra field
 * Possibility to add phone number field
 * Possibility to add email address field
 * Making fields mandatory
@@ -63,14 +63,14 @@ You can also display the WP Phone Message form through a widget
 
 How to add international contacts' phone numbers To add an international contact's phone number:
 
-* Open your phone's address book.
+* Open your phone's extra book.
 * When adding the contact's phone number, start by entering a plus sign (+).
 * Enter the country code, followed by the full phone number. Note: A country code is a numerical prefix that must be entered before the full national phone number to make a call to another country. You can search online to find the country code you need. For example, if a contact in the United States (country code "1") has the area code "408" and phone number "XXX-XXXX", you'd enter +1 408 XXX XXXX.
 
 Note:
 
 * Make sure to remove any leading 0s or special calling codes.
-* If you meant to add a local (in country) phone number to your phone's address book, enter the number as if you were calling your contact on the phone.
+* If you meant to add a local (in country) phone number to your phone's extra book, enter the number as if you were calling your contact on the phone.
 * All phone numbers in Argentina (country code "54") should have a "9" between the country code and area code. The prefix "15" must be removed so the final number will have 13 digits total: +54 9 XXX XXX XXXX
 * Phone numbers in Mexico (country code "52") need to have "1" after "+52", even if they're Nextel numbers.
 
@@ -98,11 +98,11 @@ e.g.
 
 = 1.0.5 =
 * Possibility to add name field in shortcode form
-* Possibility to add address field in shortcode form
+* Possibility to add extra field in shortcode form
 * Possibility to add phone number field in shortcode form
 * Possibility to add email address field in shortcode form
 * Possibility to add name field in widget form
-* Possibility to add address field in widget form
+* Possibility to add extra field in widget form
 * Possibility to add phone number field in widget form
 * Possibility to add email address field in widget form
 
@@ -112,7 +112,7 @@ e.g.
 
 = 1.0.3 =
 * Possibility to add name field
-* Possibility to add address field
+* Possibility to add extra field
 * Possibility to add phone number field
 * Possibility to add email address field
 * Making fields mandatory

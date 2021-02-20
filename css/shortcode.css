@@ -22,7 +22,7 @@
 .whatapp-form .wp-phone-message-message, 
 .whatapp-form .wp-phone-message-name, 
 .whatapp-form .wp-phone-message-phone,
-.whatapp-form .wp-phone-message-address,
+.whatapp-form .wp-phone-message-extra,
 .whatapp-form .wp-phone-message-email {
     background: rgba(255,255,255,.1);
     border: none;
@@ -47,7 +47,7 @@
 .whatapp-form .wp-phone-message-message:focus, 
 .whatapp-form .wp-phone-message-name:focus, 
 .whatapp-form .wp-phone-message-phone:focus,
-.whatapp-form .wp-phone-message-address:focus,
+.whatapp-form .wp-phone-message-extra:focus,
 .whatapp-form .wp-phone-message-email:focus {
 	background: #d2d9dd;
 }
