@@ -45,9 +45,7 @@
                                           class="regular-text" />
                                     <p class="description" id="wp-phone-message-phone-number-description">Insert a valid
                                           Whatsapp number that will receive the messages.<br />
-                                          <strong>Please be sure to insert a phone number without
-                                                international
-                                                prefix.</strong>
+                                          <strong>Please be sure to insert a valid phone number without international prefix.</strong>
                                     </p>
                               </td>
                         </tr>
