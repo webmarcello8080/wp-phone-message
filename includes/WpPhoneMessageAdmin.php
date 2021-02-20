@@ -7,8 +7,8 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function __construct(){
             add_action( 'admin_menu', array( $this, 'adminMenu' ) );
-            // add_action( 'admin_menu', array( $this, 'freemiusMenu' ) );
-            // do_action( 'wpm_fs_loaded' );
+            add_action( 'admin_menu', array( $this, 'freemiusMenu' ) );
+            do_action( 'wpm_fs_loaded' );
             add_action( 'admin_post_wp-phone-message-form-message', array( $this, 'adminSave' ) );
             add_action( 'admin_enqueue_scripts', array( $this, 'adminStyle' ) );
             $this->model = new WpPhoneMessageModel;
