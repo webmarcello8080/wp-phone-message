@@ -1,7 +1,7 @@
 .form-messages {
     text-align: left;
     font-weight: 600;
-    color: red;
+    color: red !important;
 }
 
 /* insert flags */

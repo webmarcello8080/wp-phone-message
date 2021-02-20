@@ -89,6 +89,9 @@ e.g.
 
 == Changelog ==
 
+= 1.1.0 =
+* Premium Version realeased
+
 = 1.0.7 =
 * Send phone number to JS through wp_localize
 

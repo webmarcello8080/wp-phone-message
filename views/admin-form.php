@@ -71,7 +71,7 @@
                   <tbody>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-text">Text in ShortCode Form :</label>
+                                    <label for="wp-phone-message-text">Text in ShortCode Form: </label>
                               </th>
                               <td>
                                     <textarea name="wp-phone-message-text" id="wp-phone-message-text"
@@ -82,7 +82,7 @@
                         </tr>
                         <tr>
                               <th>
-                                    <label for="wp-phone-message-name">Name Area in ShortCode Form :</label>
+                                    <label for="wp-phone-message-name">Name Area in ShortCode Form: </label>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-name-active"
@@ -106,7 +106,7 @@
                         </tr>
                         <tr>
                               <th>
-                                    <label for="wp-phone-message-extra">Extra Area in ShortCode Form :</label>
+                                    <label for="wp-phone-message-extra">Extra Area in ShortCode Form: </label>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-extra-active"
@@ -130,7 +130,8 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-phone">Phone Area in ShortCode Form :</label>
+                                    <label for="wp-phone-message-phone">Phone Area in ShortCode Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-phone-active"
@@ -154,7 +155,8 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-email">Email Address Area in ShortCode Form :</label>
+                                    <label for="wp-phone-message-email">Email Address Area in ShortCode Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-email-active"
@@ -178,9 +180,8 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-textarea">
-                                          Text Area Placeholder in ShortCode Form :
-                                    </label>
+                                    <label for="wp-phone-message-textarea">Text Area Placeholder in ShortCode Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input name="wp-phone-message-textarea" type="text" id="wp-phone-message-textarea"
@@ -191,7 +192,7 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-button">Button Title in ShortCode Form :</label>
+                                    <label for="wp-phone-message-button">Button Title in ShortCode Form: </label>
                               </th>
                               <td>
                                     <input name="wp-phone-message-button" type="text" id="wp-phone-message-button"
@@ -233,7 +234,7 @@
                         </tr>
                         <tr>
                               <th>
-                                    <label for="wp-phone-message-extra-widget">Extra Area in Widget Form :</label>
+                                    <label for="wp-phone-message-extra-widget">Extra Area in Widget Form: </label>
                               </th>
 
                               <td>
@@ -258,7 +259,8 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-phone-widget">Phone Area in Widget Form :</label>
+                                    <label for="wp-phone-message-phone-widget">Phone Area in Widget Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-phone-active-widget"
@@ -282,7 +284,8 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-email-widget">Email Address Area in Widget Form :</label>
+                                    <label for="wp-phone-message-email-widget">Email Address Area in Widget Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-email-active-widget"
@@ -306,7 +309,8 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-textarea-widget">Text Area Placeholder in Widget Form :</label>
+                                    <label for="wp-phone-message-textarea-widget">Text Area Placeholder in Widget Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input name="wp-phone-message-textarea-widget" type="text" id="wp-phone-message-textarea-widget"
@@ -317,7 +321,7 @@
                         </tr>
                         <tr>
                               <th scope="row">
-                                    <label for="wp-phone-message-button-widget">Button Title in Widget Form :</label>
+                                    <label for="wp-phone-message-button-widget">Button Title in Widget Form: </label>
                               </th>
                               <td>
                                     <input name="wp-phone-message-button-widget" type="text" id="wp-phone-message-button-widget"
