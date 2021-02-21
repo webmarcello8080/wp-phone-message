@@ -105,33 +105,8 @@
                               </td>
                         </tr>
                         <tr>
-                              <th>
-                                    <label for="wp-phone-message-extra">Extra Area in ShortCode Form: </label>
-                              </th>
-                              <td>
-                                    <input type="checkbox" id="wp-phone-message-extra-active"
-                                          name="wp-phone-message-extra-active"
-                                          <?= ( get_option('wp-phone-message-extra-active') ? 'checked' : '') ?>
-                                          value="1">
-                                    <label for="wp-phone-message-extra-active">Active Extra Input Area in shortcode</label>
-                              </td>
-                              <td>
-                                    <input type="checkbox" id="wp-phone-message-extra-mandatory"
-                                          name="wp-phone-message-extra-mandatory"
-                                          <?= ( get_option('wp-phone-message-extra-mandatory') ? 'checked' : '') ?>
-                                          value="required">
-                                    <label for="wp-phone-message-extra-mandatory">Extra Input Area Mandatory</label>
-                              </td>
-                              <td>
-                                    <input name="wp-phone-message-extra" type="text" id="wp-phone-message-extra"
-                                          value="<?= get_option('wp-phone-message-extra'); ?>" class="regular-text" />
-                                    <p class="description" id="wp-phone-message-extra-description">The Extra input placeholder.</p>
-                              </td>
-                        </tr>
-                        <tr>
                               <th scope="row">
                                     <label for="wp-phone-message-phone">Phone Area in ShortCode Form: </label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-phone-active"
@@ -151,6 +126,31 @@
                                     <input name="wp-phone-message-phone" type="text" id="wp-phone-message-phone"
                                           value="<?= get_option('wp-phone-message-phone'); ?>" class="regular-text" />
                                     <p class="description" id="wp-phone-message-phone-description">The Phone input placeholder.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                              <th>
+                                    <label for="wp-phone-message-extra">Extra Area in ShortCode Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
+                              </th>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-extra-active"
+                                          name="wp-phone-message-extra-active"
+                                          <?= ( get_option('wp-phone-message-extra-active') ? 'checked' : '') ?>
+                                          value="1">
+                                    <label for="wp-phone-message-extra-active">Active Extra Input Area in shortcode</label>
+                              </td>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-extra-mandatory"
+                                          name="wp-phone-message-extra-mandatory"
+                                          <?= ( get_option('wp-phone-message-extra-mandatory') ? 'checked' : '') ?>
+                                          value="required">
+                                    <label for="wp-phone-message-extra-mandatory">Extra Input Area Mandatory</label>
+                              </td>
+                              <td>
+                                    <input name="wp-phone-message-extra" type="text" id="wp-phone-message-extra"
+                                          value="<?= get_option('wp-phone-message-extra'); ?>" class="regular-text" />
+                                    <p class="description" id="wp-phone-message-extra-description">The Extra input placeholder.</p>
                               </td>
                         </tr>
                         <tr>
@@ -233,34 +233,8 @@
                               </td>
                         </tr>
                         <tr>
-                              <th>
-                                    <label for="wp-phone-message-extra-widget">Extra Area in Widget Form: </label>
-                              </th>
-
-                              <td>
-                                    <input type="checkbox" id="wp-phone-message-extra-active-widget"
-                                          name="wp-phone-message-extra-active-widget"
-                                          <?= ( get_option('wp-phone-message-extra-active-widget') ? 'checked' : '') ?>
-                                          value="1">
-                                    <label for="wp-phone-message-extra-active-widget">Active Extra Input Area in widget</label>
-                              </td>
-                              <td>
-                                    <input type="checkbox" id="wp-phone-message-extra-mandatory-widget"
-                                          name="wp-phone-message-extra-mandatory-widget"
-                                          <?= ( get_option('wp-phone-message-extra-mandatory-widget') ? 'checked' : '') ?>
-                                          value="required">
-                                    <label for="wp-phone-message-extra-mandatory-widget">Extra Input Area Mandatory in widget</label>
-                              </td>
-                              <td>
-                                    <input name="wp-phone-message-extra-widget" type="text" id="wp-phone-message-extra-widget"
-                                          value="<?= get_option('wp-phone-message-extra-widget'); ?>" class="regular-text" />
-                                    <p class="description" id="wp-phone-message-extra-widget-description">The Extra input placeholder in widget.</p>
-                              </td>
-                        </tr>
-                        <tr>
                               <th scope="row">
                                     <label for="wp-phone-message-phone-widget">Phone Area in Widget Form: </label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-phone-active-widget"
@@ -280,6 +254,31 @@
                                     <input name="wp-phone-message-phone-widget" type="text" id="wp-phone-message-phone-widget"
                                           value="<?= get_option('wp-phone-message-phone-widget'); ?>" class="regular-text" />
                                     <p class="description" id="wp-phone-message-phone-widget-description">The Phone input placeholder in widget.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                              <th>
+                                    <label for="wp-phone-message-extra-widget">Extra Area in Widget Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
+                              </th>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-extra-active-widget"
+                                          name="wp-phone-message-extra-active-widget"
+                                          <?= ( get_option('wp-phone-message-extra-active-widget') ? 'checked' : '') ?>
+                                          value="1">
+                                    <label for="wp-phone-message-extra-active-widget">Active Extra Input Area in widget</label>
+                              </td>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-extra-mandatory-widget"
+                                          name="wp-phone-message-extra-mandatory-widget"
+                                          <?= ( get_option('wp-phone-message-extra-mandatory-widget') ? 'checked' : '') ?>
+                                          value="required">
+                                    <label for="wp-phone-message-extra-mandatory-widget">Extra Input Area Mandatory in widget</label>
+                              </td>
+                              <td>
+                                    <input name="wp-phone-message-extra-widget" type="text" id="wp-phone-message-extra-widget"
+                                          value="<?= get_option('wp-phone-message-extra-widget'); ?>" class="regular-text" />
+                                    <p class="description" id="wp-phone-message-extra-widget-description">The Extra input placeholder in widget.</p>
                               </td>
                         </tr>
                         <tr>
