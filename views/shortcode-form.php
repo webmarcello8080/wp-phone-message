@@ -10,11 +10,13 @@ if(get_option('wp-phone-message-name-active')){
 if(get_option('wp-phone-message-phone-active')){
     $shortcode_form .= '<input type="tel" class="wp-phone-message-phone" id="wp-phone-message-phone" placeholder="' . get_option('wp-phone-message-phone') . '"  ' . get_option('wp-phone-message-phone-mandatory') . ' />';
 }
-if(get_option('wp-phone-message-extra-active') && wp_phone_message_wpm_fs()->can_use_premium_code()){
-    $shortcode_form .= '<input type="text" class="wp-phone-message-extra" id="wp-phone-message-extra" placeholder="' . get_option('wp-phone-message-extra') . '"  ' . get_option('wp-phone-message-extra-mandatory') . ' />';
-}
-if(get_option('wp-phone-message-email-active') && wp_phone_message_wpm_fs()->can_use_premium_code()){
-    $shortcode_form .= '<input type="email" class="wp-phone-message-email" id="wp-phone-message-email" placeholder="' . get_option('wp-phone-message-email') . '"  ' . get_option('wp-phone-message-email-mandatory') . ' />';
+if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
+    if(get_option('wp-phone-message-extra-active') && wp_phone_message_wpm_fs()->is_plan('premium')){
+        $shortcode_form .= '<input type="text" class="wp-phone-message-extra" id="wp-phone-message-extra" placeholder="' . get_option('wp-phone-message-extra') . '"  ' . get_option('wp-phone-message-extra-mandatory') . ' />';
+    }
+    if(get_option('wp-phone-message-email-active') && wp_phone_message_wpm_fs()->is_plan('premium')){
+        $shortcode_form .= '<input type="email" class="wp-phone-message-email" id="wp-phone-message-email" placeholder="' . get_option('wp-phone-message-email') . '"  ' . get_option('wp-phone-message-email-mandatory') . ' />';
+    }
 }
 
 $shortcode_form .= '<textarea class="wp-phone-message-message" id="wp-phone-message-message" placeholder="' . get_option('wp-phone-message-textarea') . '" required ></textarea>';

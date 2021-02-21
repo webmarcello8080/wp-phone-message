@@ -27,9 +27,9 @@ if ( ! function_exists( 'wp_phone_message_wpm_fs' ) ) {
                         'slug' => 'options-general.php',
                     ),
                 ),
-                // // Set the SDK to work in a sandbox mode (for development & testing).
-                // // IMPORTANT: MAKE SURE TO REMOVE SECRET KEY BEFORE DEPLOYMENT.
-                // 'secret_key'          => 'sk_QJm%p>es2*s^D5$>_i)@ae[7W*-jz',
+                // Set the SDK to work in a sandbox mode (for development & testing).
+                // IMPORTANT: MAKE SURE TO REMOVE SECRET KEY BEFORE DEPLOYMENT.
+                'secret_key'          => 'sk_QJm%p>es2*s^D5$>_i)@ae[7W*-jz',
             ) );
         }
 

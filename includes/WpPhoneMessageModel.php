@@ -9,10 +9,10 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $prefix = (int) str_replace(' ', '', sanitize_text_field( $args['wp-phone-message-phone-prefix'] ));
             $title = sanitize_text_field( $args['wp-phone-message-title'] );
             $text = sanitize_text_field( $args['wp-phone-message-text'] );
+            $fullPhoneNumber = (int) str_replace(' ', '', $prefix) . ltrim(str_replace(' ', '', $phone), '0') ;
 
             // Shortcode Form Fields
             $button = sanitize_text_field( $args['wp-phone-message-button'] );
-            $textarea = sanitize_text_field( $args['wp-phone-message-textarea'] );
             $name_place = sanitize_text_field( $args['wp-phone-message-name'] );
             $name_active = sanitize_text_field( $args['wp-phone-message-name-active'] );
             $name_mandatory = sanitize_text_field( $args['wp-phone-message-name-mandatory'] );
@@ -28,7 +28,6 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
 
             // widget form fields
             $button_widget = sanitize_text_field( $args['wp-phone-message-button-widget'] );
-            $textarea_widget = sanitize_text_field( $args['wp-phone-message-textarea-widget'] );
             $name_place_widget = sanitize_text_field( $args['wp-phone-message-name-widget'] );
             $name_active_widget = sanitize_text_field( $args['wp-phone-message-name-active-widget'] );
             $name_mandatory_widget = sanitize_text_field( $args['wp-phone-message-name-mandatory-widget'] );
@@ -42,11 +41,12 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $email_active_widget = sanitize_text_field( $args['wp-phone-message-email-active-widget'] );
             $email_mandatory_widget = sanitize_text_field( $args['wp-phone-message-email-mandatory-widget'] );
 
-            if( !wp_phone_message_wpm_fs()->can_use_premium_code()){
-                $textarea = $textarea_widget = '';
+            if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
+                if( wp_phone_message_wpm_fs()->is_plan('premium') ){
+                    $textarea = sanitize_text_field( $args['wp-phone-message-textarea'] );
+                    $textarea_widget = sanitize_text_field( $args['wp-phone-message-textarea-widget'] );
+                }
             }
-
-            $fullPhoneNumber = (int) str_replace(' ', '', $prefix) . ltrim(str_replace(' ', '', $phone), '0') ;
 
             update_option( 'wp-phone-message-phone-number', $phone );
             update_option( 'wp-phone-message-phone-prefix', $prefix );

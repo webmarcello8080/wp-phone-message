@@ -8,11 +8,13 @@
         if(get_option('wp-phone-message-phone-active-widget')){
             echo '<input type="tel" class="wp-phone-message-phone" id="wp-phone-message-widget-phone" placeholder="' . get_option('wp-phone-message-phone-widget') . '"  ' . get_option('wp-phone-message-phone-mandatory-widget') . ' />';
         }
-        if(get_option('wp-phone-message-extra-active-widget') && wp_phone_message_wpm_fs()->can_use_premium_code()){
-            echo '<input type="text" class="wp-phone-message-extra" id="wp-phone-message-widget-extra" placeholder="' . get_option('wp-phone-message-extra-widget') . '"  ' . get_option('wp-phone-message-extra-mandatory-widget') . ' />';
-        }
-        if(get_option('wp-phone-message-email-active-widget') && wp_phone_message_wpm_fs()->can_use_premium_code()){
-            echo '<input type="email" class="wp-phone-message-email" id="wp-phone-message-widget-email" placeholder="' . get_option('wp-phone-message-email-widget') . '"  ' . get_option('wp-phone-message-email-mandatory-widget') . ' />';
+        if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
+            if(get_option('wp-phone-message-extra-active-widget') && wp_phone_message_wpm_fs()->is_plan('premium')){
+                echo '<input type="text" class="wp-phone-message-extra" id="wp-phone-message-widget-extra" placeholder="' . get_option('wp-phone-message-extra-widget') . '"  ' . get_option('wp-phone-message-extra-mandatory-widget') . ' />';
+            }
+            if(get_option('wp-phone-message-email-active-widget') && wp_phone_message_wpm_fs()->is_plan('premium')){
+                echo '<input type="email" class="wp-phone-message-email" id="wp-phone-message-widget-email" placeholder="' . get_option('wp-phone-message-email-widget') . '"  ' . get_option('wp-phone-message-email-mandatory-widget') . ' />';
+            }
         }
         ?>
         <textarea class="wp-phone-message-message" id="wp-phone-message-widget-message" placeholder="<?= get_option('wp-phone-message-textarea-widget'); ?>" required></textarea>
