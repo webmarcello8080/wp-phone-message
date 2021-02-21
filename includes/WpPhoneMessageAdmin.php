@@ -7,7 +7,11 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function __construct(){
             add_action( 'admin_menu', array( $this, 'adminMenu' ) );
-            add_action( 'admin_post_wp-phone-message-form-message', array( $this, 'adminSave' ) );
+            add_action( 'admin_post_wp-phone-message-settings', array( $this, 'adminSettingSave' ) );
+            add_action( 'admin_post_wp-phone-message-shortcode', array( $this, 'adminShortcodeSave' ) );
+            add_action( 'admin_post_wp-phone-message-widget', array( $this, 'adminWidgetSave' ) );
+            add_action( 'admin_post_wp-phone-message-style', array( $this, 'adminStyleSave' ) );
+
             add_action( 'admin_enqueue_scripts', array( $this, 'adminStyle' ) );
             $this->model = new WpPhoneMessageModel;
         }
@@ -25,20 +29,54 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function adminPage() {
             //show the form
-            include_once( PLUGIN_WPM_PATH . 'views/admin-form.php' );
+            if( isset( $_GET[ 'tab' ] ) ) {
+                $active_tab = $_GET[ 'tab' ];
+            } else {
+                $active_tab = 'general_settings';
+            }
+
+            switch($active_tab){
+                case 'general_settings': include_once( PLUGIN_WPM_PATH . 'views/admin-form-settings.php' );
+                    break;
+                case 'shortcode_form': include_once( PLUGIN_WPM_PATH . 'views/admin-form-shortcode.php' );
+                    break;
+                case 'widget_form': include_once( PLUGIN_WPM_PATH . 'views/admin-form-widget.php' );
+                    break;
+                case 'style': include_once( PLUGIN_WPM_PATH . 'views/admin-form-style.php' );
+                    break;
+                default: include_once( PLUGIN_WPM_PATH . 'views/admin-form-settings.php' );
+            }
         }
         
-        public function adminSave(){
+        public function adminSettingSave(){
             // save data
             if( ( $_POST['wp-phone-message-phone-number'] ) && ( $_POST['wp-phone-message-phone-prefix'] ) ) {
                 $_POST['wp-phone-message-phone-number'] = $this->cleanPhoneNumber($_POST);
-                $this->model->setData($_POST);
+                $this->model->setSettingsData($_POST);
                 $this->model->setMessage('Settings saved.');
             }
             else{
-                $this->model->setData($_POST);
+                $this->model->setSettingsData($_POST);
                 $this->model->setMessage('International prefix and Whatsapp phone number are required.');
             }
+
+            $this->adminRedirect();
+        }
+
+        public function adminShortcodeSave(){
+            $this->model->setShortcodeData($_POST);
+
+            $this->adminRedirect();
+        }
+
+        public function adminWidgetSave(){
+            $this->model->setWidgetData($_POST);
+
+            $this->adminRedirect();
+        }
+
+        public function adminStyleSave(){
+            $this->model->setStyleData($_POST);
 
             $this->adminRedirect();
         }

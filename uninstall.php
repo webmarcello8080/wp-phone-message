@@ -41,3 +41,6 @@ delete_option( 'wp-phone-message-email-active-widget' );
 delete_option( 'wp-phone-message-email-mandatory-widget' );
 
 add_shortcode( 'wp-phone-message', '__return_false' );
+
+// Not like register_uninstall_hook(), you do NOT have to use a static function.
+wp_phone_message_wpm_fs()->add_action('after_uninstall', 'wp_phone_message_wpm_fs_uninstall_cleanup');

@@ -39,5 +39,14 @@ if ( ! function_exists( 'wp_phone_message_wpm_fs' ) ) {
     // Init Freemius.
     wp_phone_message_wpm_fs();
     // Signal that SDK was initiated.
-    do_action( 'wpm_fs_loaded' );
+    do_action( 'wp_phone_message_wpm_fs_loaded' );
+
+    function wp_phone_message_wpm_fs_settings_url() {
+        return admin_url( 'options-general.php?page=wp-phone-message-admin&tab=general_settings' );
+    }
+
+    wp_phone_message_wpm_fs()->add_filter('connect_url', 'wp_phone_message_wpm_fs_settings_url');
+    wp_phone_message_wpm_fs()->add_filter('after_skip_url', 'wp_phone_message_wpm_fs_settings_url');
+    wp_phone_message_wpm_fs()->add_filter('after_connect_url', 'wp_phone_message_wpm_fs_settings_url');
+    wp_phone_message_wpm_fs()->add_filter('after_pending_connect_url', 'wp_phone_message_wpm_fs_settings_url');
 }
