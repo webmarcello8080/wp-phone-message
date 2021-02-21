@@ -9,10 +9,11 @@ jQuery(document).ready(function ($) {
         var extra = $('#wp-phone-message-extra').val();
         var phone = $('#wp-phone-message-phone').val();
         var email = $('#wp-phone-message-email').val();
+        var dropdown = $('#wp-phone-message-dropdown').val();
         var title = $('#wp-phone-message-title').val();
 
         if (whatappValidation(fullTelephone, 'whatapp-error')) {
-            final_message = whatappCreateFinalMessage(name, extra, phone, email, message);
+            final_message = whatappCreateFinalMessage(name, extra, phone, email, message, dropdown);
             var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + final_message;
 
             popupwindow(whatappUrl, title, 1000, 700);
@@ -27,9 +28,10 @@ jQuery(document).ready(function ($) {
         var extra = $('#wp-phone-message-widget-extra').val();
         var phone = $('#wp-phone-message-widget-phone').val();
         var email = $('#wp-phone-message-widget-email').val();
+        var dropdown = $('#wp-phone-message-widget-dropdown').val();
 
         if (whatappValidation(fullTelephone, 'whatapp-widget-error')) {
-            final_message = whatappCreateFinalMessage(name, extra, phone, email, message);
+            final_message = whatappCreateFinalMessage(name, extra, phone, email, message, dropdown);
             var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + final_message;
 
             popupwindow(whatappUrl, 'Whatsapp Me', 1000, 700);
@@ -58,7 +60,7 @@ jQuery(document).ready(function ($) {
         $("#" + errorTarget).text(errorMessage);
     }
 
-    function whatappCreateFinalMessage(name, extra, phone, email, message) {
+    function whatappCreateFinalMessage(name, extra, phone, email, message, dropdown) {
 
         final_message = '';
         if (name !== undefined)
@@ -69,6 +71,9 @@ jQuery(document).ready(function ($) {
             final_message += phone + ' %0a';
         if (email !== undefined)
             final_message += email + ' %0a';
+        if (dropdown !== undefined)
+            final_message += dropdown + ' %0a';
+
         final_message += message.replace(/[\r\n]/g, " %0a");
 
         return final_message;

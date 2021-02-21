@@ -15,6 +15,9 @@
             if(get_option('wp-phone-message-email-active-widget') && wp_phone_message_wpm_fs()->is_plan('premium')){
                 echo '<input type="email" class="wp-phone-message-email" id="wp-phone-message-widget-email" placeholder="' . get_option('wp-phone-message-email-widget') . '"  ' . get_option('wp-phone-message-email-mandatory-widget') . ' />';
             }
+            if(get_option('wp-phone-message-dropdown-active-widget') && wp_phone_message_wpm_fs()->is_plan('premium')){
+                echo WpPhoneMessageForm::getDropdown('wp-phone-message-dropdown', 'wp-phone-message-widget-dropdown', get_option('wp-phone-message-dropdown-widget'), get_option('wp-phone-message-dropdown-mandatory-widget'));
+            }
         }
         ?>
         <textarea class="wp-phone-message-message" id="wp-phone-message-widget-message" placeholder="<?= get_option('wp-phone-message-textarea-widget'); ?>" required></textarea>

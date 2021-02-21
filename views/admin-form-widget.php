@@ -112,6 +112,32 @@
                         </tr>
                         <tr>
                               <th scope="row">
+                                    <label for="wp-phone-message-dropdown-widget">Dropdown Area in Widget Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
+                              </th>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-dropdown-active-widget"
+                                          name="wp-phone-message-dropdown-active-widget"
+                                          <?= ( get_option('wp-phone-message-dropdown-active-widget') ? 'checked' : '') ?>
+                                          value="1">
+                                    <label for="wp-phone-message-dropdown-active-widget">Active Dropdown Input Area in Widget</label>
+                              </td>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-dropdown-mandatory-widget"
+                                          name="wp-phone-message-dropdown-mandatory-widget"
+                                          <?= ( get_option('wp-phone-message-dropdown-mandatory-widget') ? 'checked' : '') ?>
+                                          value="required">
+                                    <label for="wp-phone-message-dropdown-mandatory-widget">Dropdown Input Area Mandatory</label>
+                              </td>
+                              <td>
+                                    <textarea name="wp-phone-message-dropdown-widget" id="wp-phone-message-dropdown-widget"
+                                          class="large-text code"
+                                          rows="3"><?= get_option('wp-phone-message-dropdown-widget'); ?></textarea>
+                                    <p class="description" id="wp-phone-message-dropdown-widget-description">The Dropdown input options. Please insert options separated by comma.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                              <th scope="row">
                                     <label for="wp-phone-message-textarea-widget">Text Area Placeholder in Widget Form: </label>
                                     <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>

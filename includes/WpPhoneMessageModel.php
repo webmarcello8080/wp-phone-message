@@ -33,6 +33,9 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $email_place = sanitize_text_field( $args['wp-phone-message-email'] );
             $email_active = sanitize_text_field( $args['wp-phone-message-email-active'] );
             $email_mandatory = sanitize_text_field( $args['wp-phone-message-email-mandatory'] );
+            $dropdown_place = sanitize_text_field( $args['wp-phone-message-dropdown'] );
+            $dropdown_active = sanitize_text_field( $args['wp-phone-message-dropdown-active'] );
+            $dropdown_mandatory = sanitize_text_field( $args['wp-phone-message-dropdown-mandatory'] );
 
             if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
                 if( wp_phone_message_wpm_fs()->is_plan('premium') ){
@@ -56,6 +59,9 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             update_option( 'wp-phone-message-email', $email_place );
             update_option( 'wp-phone-message-email-active', $email_active );
             update_option( 'wp-phone-message-email-mandatory', $email_mandatory );
+            update_option( 'wp-phone-message-dropdown', $dropdown_place );
+            update_option( 'wp-phone-message-dropdown-active', $dropdown_active );
+            update_option( 'wp-phone-message-dropdown-mandatory', $dropdown_mandatory );
 
         }
 
@@ -75,6 +81,9 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $email_place_widget = sanitize_text_field( $args['wp-phone-message-email-widget'] );
             $email_active_widget = sanitize_text_field( $args['wp-phone-message-email-active-widget'] );
             $email_mandatory_widget = sanitize_text_field( $args['wp-phone-message-email-mandatory-widget'] );
+            $dropdown_place_widget = sanitize_text_field( $args['wp-phone-message-dropdown-widget'] );
+            $dropdown_active_widget = sanitize_text_field( $args['wp-phone-message-dropdown-active-widget'] );
+            $dropdown_mandatory_widget = sanitize_text_field( $args['wp-phone-message-dropdown-mandatory-widget'] );
 
             if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
                 if( wp_phone_message_wpm_fs()->is_plan('premium') ){
@@ -97,6 +106,9 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             update_option( 'wp-phone-message-email-widget', $email_place_widget );
             update_option( 'wp-phone-message-email-active-widget', $email_active_widget );
             update_option( 'wp-phone-message-email-mandatory-widget', $email_mandatory_widget );
+            update_option( 'wp-phone-message-dropdown-widget', $dropdown_place_widget );
+            update_option( 'wp-phone-message-dropdown-active-widget', $dropdown_active_widget );
+            update_option( 'wp-phone-message-dropdown-mandatory-widget', $dropdown_mandatory_widget );
 
         }
 

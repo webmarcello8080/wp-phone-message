@@ -27,5 +27,18 @@ if ( !class_exists( 'WpPhoneMessageForm' ) ) {
          <?php
       }
 
+      public static function getDropdown($class, $id, $optionsList, $mandatory){
+         $arrayOptions = explode(',', $optionsList);
+         $arrayOptions = array_map('trim',$arrayOptions);
+
+         $output = '<select class="' . $class . '" id="' . $id . '" ' . $mandatory . '>';
+         $output .= '<option value=""></option>';
+         foreach($arrayOptions as $option){
+            $output .= '<option value="' . $option . '">' . $option . '</option>';
+         }
+         $output .= '</select>';
+
+         return $output;
+      }
    }
 }

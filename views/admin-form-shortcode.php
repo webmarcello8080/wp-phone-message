@@ -123,6 +123,32 @@
                         </tr>
                         <tr>
                               <th scope="row">
+                                    <label for="wp-phone-message-dropdown">Dropdown Area in ShortCode Form: </label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
+                              </th>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-dropdown-active"
+                                          name="wp-phone-message-dropdown-active"
+                                          <?= ( get_option('wp-phone-message-dropdown-active') ? 'checked' : '') ?>
+                                          value="1">
+                                    <label for="wp-phone-message-dropdown-active">Active Dropdown Input Area in shortcode</label>
+                              </td>
+                              <td>
+                                    <input type="checkbox" id="wp-phone-message-dropdown-mandatory"
+                                          name="wp-phone-message-dropdown-mandatory"
+                                          <?= ( get_option('wp-phone-message-dropdown-mandatory') ? 'checked' : '') ?>
+                                          value="required">
+                                    <label for="wp-phone-message-dropdown-mandatory">Dropdown Input Area Mandatory</label>
+                              </td>
+                              <td>
+                                    <textarea name="wp-phone-message-dropdown" id="wp-phone-message-dropdown"
+                                          class="large-text code"
+                                          rows="3"><?= get_option('wp-phone-message-dropdown'); ?></textarea>
+                                    <p class="description" id="wp-phone-message-dropdown-description">The Dropdown input options. Please insert options separated by comma.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                              <th scope="row">
                                     <label for="wp-phone-message-textarea">Text Area Placeholder in ShortCode Form: </label>
                                     <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>

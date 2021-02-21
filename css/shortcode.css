@@ -23,8 +23,9 @@
 .whatapp-form .wp-phone-message-name, 
 .whatapp-form .wp-phone-message-phone,
 .whatapp-form .wp-phone-message-extra,
-.whatapp-form .wp-phone-message-email {
-    background: rgba(255,255,255,.1);
+.whatapp-form .wp-phone-message-email, 
+.whatapp-form .wp-phone-message-dropdown {
+    background: rgba(247, 247, 247, 0.1);
     border: none;
     border-radius: 4px;
     font-size: 15px;
@@ -45,7 +46,8 @@
 .whatapp-form .wp-phone-message-name::placeholder, 
 .whatapp-form .wp-phone-message-phone::placeholder,
 .whatapp-form .wp-phone-message-extra::placeholder,
-.whatapp-form .wp-phone-message-email::placeholder {
+.whatapp-form .wp-phone-message-email::placeholder,
+.whatapp-form .wp-phone-message-dropdown::placeholder {
     color: #0e101a;
     opacity: 0.6;
 }
@@ -56,7 +58,8 @@
 .whatapp-form .wp-phone-message-name:focus, 
 .whatapp-form .wp-phone-message-phone:focus,
 .whatapp-form .wp-phone-message-extra:focus,
-.whatapp-form .wp-phone-message-email:focus {
+.whatapp-form .wp-phone-message-email:focus,
+.whatapp-form .wp-phone-message-dropdown:focus {
 	background: #d2d9dd;
 }
 .whatapp-form .whatapp-error {
