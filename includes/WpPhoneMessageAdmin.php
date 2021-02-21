@@ -57,7 +57,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             }
             else{
                 $this->model->setSettingsData($_POST);
-                $this->model->setMessage('International prefix and Whatsapp phone number are required.');
+                $this->model->setMessage('International prefix and WhatsApp phone number are required.');
             }
 
             $this->adminRedirect();
