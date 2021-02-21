@@ -8,6 +8,7 @@
  * Requires PHP:      5.6
  * Author:            Marcello Perri
  * Author URI:        http://webmarcello.co.uk
+ * Text Domain:       wp-phone-message
  */
 
 

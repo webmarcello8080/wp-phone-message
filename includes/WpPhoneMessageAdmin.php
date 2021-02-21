@@ -14,8 +14,8 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function adminMenu() {
             add_options_page(
-                'WP Phone Message Settings',
-                'WP Phone Message',
+                __('WP Phone Message Settings', 'wp-phone-message'),
+                __('WP Phone Message', 'wp-phone-message'),
                 'manage_options',
                 'wp-phone-message-admin',
                 array( $this, 'adminPage' ),

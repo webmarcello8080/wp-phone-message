@@ -11,10 +11,10 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
             'WpPhoneMessageWidget', 
             
             // Widget name will appear in UI
-            __('WP Phone Message Widget', 'wp_phone_message_domain'), 
+            __('WP Phone Message Widget', 'wp-phone-message'), 
             
             // Widget description
-            array( 'description' => __( 'Display Whatsapp message form on widget', 'wp_phone_message_domain' ), ) 
+            array( 'description' => __( 'Display Whatsapp message form on widget', 'wp-phone-message' ), ) 
             );
         }
         
@@ -41,7 +41,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
                 $title = $instance[ 'title' ];
             }
             else {
-                $title = __( 'New title', 'wp_phone_message_domain' );
+                $title = __( 'New title', 'wp-phone-message' );
             }
             if ( isset( $instance[ 'text' ] ) ) {
                 $text = $instance[ 'text' ];

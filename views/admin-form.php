@@ -346,7 +346,7 @@
 <?php
     }
     else {
-    ?>
-<p> <?php __("You are not authorized to perform this operation.") ?> </p>
-<?php   
+      ?>
+      <p><?php __("You are not authorized to perform this operation.", 'wp-phone-message') ?></p>
+      <?php   
     }
