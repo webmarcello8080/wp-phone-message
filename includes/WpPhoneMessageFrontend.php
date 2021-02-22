@@ -7,13 +7,21 @@ if ( !class_exists( 'WpPhoneMessageFrontend' ) ) {
 
       public function __construct(){
          add_action( 'wp_enqueue_scripts', array( $this, 'shortcodeStyle' ) );
-         add_action('wp_head', array( $this, 'addCustomCss' ));
+         add_action( 'wp_head', array( $this, 'addCustomCss' ) );
 
          $this->pluginModel = new WpPhoneMessageModel;
       }
 
       public function shortcodeStyle(){
-         wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcode.min.css', array(), null, 'all' );
+         // select style based on setting
+         switch( get_option('wp-phone-message-style') ){
+            case 'dark': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeDark.min.css', array(), null, 'all' );
+                  break;
+            case 'fancy': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeFancy.min.css', array(), null, 'all' );
+                  break;
+            default: wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcode.min.css', array(), null, 'all' );
+         }
+         
          wp_enqueue_script('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'js/shortcode.min.js', array( 'jquery' ), '1.0.0', true );
          wp_localize_script( 'wp-phone-message-shortcode', 'wp_phone_message_data',
                array( 
