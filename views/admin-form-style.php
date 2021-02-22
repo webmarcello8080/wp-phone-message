@@ -10,6 +10,43 @@
 
             <h1 class="admin-page-title"><?= __( 'Managing the Style of the Form', 'wp-phone-message' ); ?></h1>
 
+            <table class="form-table">
+                  <tbody>
+                        <tr>
+                              <th>
+                                    <label for="wp-phone-message-style">Select the form Style :</label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
+                              </th>
+                              <td>
+                                    <label>
+                                          <input type="radio" name="wp-phone-message-style" value="" <?= (get_option('wp-phone-message-style')== '') ?  "checked" : "" ;  ?>  />
+                                          <span class="date-time-text format-i18n">Default Style</span>
+                                    </label>
+                                    <label>
+                                          <input type="radio" name="wp-phone-message-style" value="dark" <?= (get_option('wp-phone-message-style')== 'dark') ?  "checked" : "" ;  ?>  />
+                                          <span class="date-time-text format-i18n">Dark Style</span>
+                                    </label>
+                                    <label>
+                                          <input type="radio" name="wp-phone-message-style" value="fancy" <?= (get_option('wp-phone-message-style')== 'fancy') ?  "checked" : "" ;  ?>  />
+                                          <span class="date-time-text format-i18n">Fancy Style</span>
+                                    </label>
+                              </td>
+                        </tr>
+                        <tr>
+                              <th>
+                                    <label for="wp-phone-message-css">Add extra CSS :</label>
+                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
+                              </th>
+                              <td>
+                                    <textarea name="wp-phone-message-css" id="wp-phone-message-css"
+                                          class="large-text code"
+                                          rows="3"><?= get_option('wp-phone-message-css'); ?></textarea>
+                                    <p class="description" id="wp-phone-message-css-description">Write your own CSS to change the design of the form.</p>
+                              </td>
+                        </tr>
+                  </tbody>
+            </table>
+
             <div class="form-messages">
                   <?php echo get_option('wp-phone-message-form-message'); ?>
                   <input type="hidden" id="wp-phone-message-full-phone-number"

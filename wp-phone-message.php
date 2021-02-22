@@ -25,6 +25,7 @@ if ( !function_exists( 'wp_phone_message_loader' ) ) {
             new WpPhoneMessageAdmin;
         }
         new WpPhoneMessageShortcode;
+        new WpPhoneMessageFrontend;
     }
     add_action('plugins_loaded', 'wp_phone_message_loader');
 }
