@@ -103,6 +103,17 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             wp_enqueue_script('wp-phone-message-intel-tel', PLUGIN_WPM_URL . 'js/intl-tel-input/build/js/intlTelInput.js' );
             wp_enqueue_style('wp-phone-message-admin', PLUGIN_WPM_URL . 'css/admin.min.css', array(), null, 'all' );
             wp_enqueue_script('wp-phone-message-admin', PLUGIN_WPM_URL . 'js/admin.min.js', array( 'jquery' ), '1.0.0', true );
+            
+            // use CodeMirror for CSS in style page
+            $cm_settings['codeEditor'] = wp_enqueue_code_editor(
+                array(
+                    'type' => 'text/css',
+                    'plugin' => 'wp-phone-message'
+                ));
+            wp_localize_script('jquery', 'cm_settings', $cm_settings);
+
+            wp_enqueue_script('wp-theme-plugin-editor');
+            wp_enqueue_style('wp-codemirror');
         }
 
         private function adminCallback() { // Section Callback

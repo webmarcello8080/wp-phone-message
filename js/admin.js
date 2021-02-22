@@ -14,4 +14,7 @@ jQuery(document).ready(function () {
             jQuery('#wp-phone-message-phone-prefix').val(thisPrefix);
         });
     }
+
+    wp.codeEditor.initialize(jQuery('#wp-phone-message-css'), cm_settings);
+
 });

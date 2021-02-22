@@ -33,7 +33,7 @@ if ( !class_exists( 'WpPhoneMessageFrontend' ) ) {
       public function addCustomCss(){
          if( get_option('wp-phone-message-css') ){
             echo '<style>';
-            echo get_option('wp-phone-message-css');
+            echo wp_unslash( get_option('wp-phone-message-css') );
             echo '</style>';
          }
       }
