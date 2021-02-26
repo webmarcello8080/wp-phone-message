@@ -120,8 +120,12 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             
             if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
                 if( wp_phone_message_wpm_fs()->is_plan('premium') ){
-                    $css = sanitize_text_field( $args['wp-phone-message-css'] );
+                    $css = $args['wp-phone-message-css'];
                     $style = sanitize_text_field( $args['wp-phone-message-style'] );
+
+                    if($args['wp-phone-message-css']){
+                        file_put_contents( PLUGIN_WPM_PATH . 'css/custom_user.css', $args['wp-phone-message-css']);
+                    }
                 }
             }
 
