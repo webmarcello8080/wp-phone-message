@@ -14,20 +14,21 @@ Wordpress Plugin made to send a Whatsapp message from your Wordpress website.
 
 WP Phone Message is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
 
+From February 2021, WP Phone Message becomes Premium, the basic functions of the plugin are still free but you have more options and more styles available if you go Premium
+
 = Settings include: =
 * Enter your international prefix (required)
 * Enter a valid whatsapp phone number (required)
 * Enter the form title
+
+= Shortcode Settings =
 * Enter form text
 * Enter form bottom text
-* Possibility to add name field in shortcode form
-* Possibility to add extra field in shortcode form
-* Possibility to add phone number field in shortcode form
-* Possibility to add email address field in shortcode form
-* Possibility to add name field in widget form
-* Possibility to add extra field in widget form
-* Possibility to add phone number field in widget form
-* Possibility to add email address field in widget form
+* Possibility to add name field in shortcode form 
+* Possibility to add extra field in shortcode form (Premium)
+* Possibility to add phone number field in shortcode form 
+* Possibility to add email address field in shortcode form (Premium)
+* Possibility to add a dropdown field in shortcode form (Premium)
 * Making fields mandatory
 * Possibility to set fields placeholder
 
@@ -36,13 +37,19 @@ WP Phone Message is a Wordpress plugin that gives the possibility to render a si
 * Enter the form title
 * Enter form text
 * Possibility to add name field
-* Possibility to add extra field
+* Possibility to add extra field (Premium)
 * Possibility to add phone number field
-* Possibility to add email address field
+* Possibility to add email address field (Premium)
+* Possibility to add a dropdown field (Premium)
 * Making fields mandatory
 * Possibility to set fields placeholder
 
 The widget will send the whatsapp to the phone number set on the setting section.
+
+= Styles: =
+(Premium)
+You can now choose from 4 different form styles.
+You can also add your own CSS style that will be added to the code as file.
 
 == Settings ==
 
