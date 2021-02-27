@@ -16,8 +16,11 @@ if ( !class_exists( 'WpPhoneMessageFrontend' ) ) {
          switch( get_option('wp-phone-message-style') ){
             case 'dark': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeDark.min.css', array(), null, 'all' );
                   break;
-            case 'fancy': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeFancy.min.css', array(), null, 'all' );
+            case 'simple': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeSimple.min.css', array(), null, 'all' );
                   break;
+            case 'elegant': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeElegant.min.css', array(), null, 'all' );
+                  break;
+            case 'none': break;
             default: wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcode.min.css', array(), null, 'all' );
          }
          

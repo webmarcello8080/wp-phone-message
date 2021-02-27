@@ -27,8 +27,16 @@
                                           <span class="date-time-text format-i18n">Dark Style</span>
                                     </label>
                                     <label>
-                                          <input type="radio" name="wp-phone-message-style" value="fancy" <?= (get_option('wp-phone-message-style')== 'fancy') ?  "checked" : "" ;  ?>  />
-                                          <span class="date-time-text format-i18n">Fancy Style</span>
+                                          <input type="radio" name="wp-phone-message-style" value="simple" <?= (get_option('wp-phone-message-style')== 'simple') ?  "checked" : "" ;  ?>  />
+                                          <span class="date-time-text format-i18n">Simple Style</span>
+                                    </label>
+                                    <label>
+                                          <input type="radio" name="wp-phone-message-style" value="elegant" <?= (get_option('wp-phone-message-style')== 'elegant') ?  "checked" : "" ;  ?>  />
+                                          <span class="date-time-text format-i18n">Elegant Style</span>
+                                    </label>
+                                    <label>
+                                          <input type="radio" name="wp-phone-message-style" value="none" <?= (get_option('wp-phone-message-style')== 'none') ?  "checked" : "" ;  ?>  />
+                                          <span class="date-time-text format-i18n">Your Website Style</span>
                                     </label>
                               </td>
                         </tr>
