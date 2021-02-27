@@ -1,6 +1,11 @@
 <?php
 
 function deletePlugin(){
+
+    if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+        exit;
+    }
+    
     delete_option( 'wp-phone-message-phone-number' );
     delete_option( 'wp-phone-message-phone-prefix' );
     delete_option( 'wp-phone-message-full-phone-number' );
