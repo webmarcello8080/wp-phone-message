@@ -14,11 +14,13 @@
 
 define('PLUGIN_WPM_BASENAME', plugin_basename(__FILE__) );
 
+// import files from folder 'includes'
 foreach ( glob( plugin_dir_path( __FILE__ ) .'includes/*.php') as $filename)
 {
     include_once $filename;
 }
 
+// load classes, create an instance of the classes to run __constructs
 if ( !function_exists( 'wp_phone_message_loader' ) ) {
     function wp_phone_message_loader(){
         if( is_admin() ){
@@ -36,4 +38,10 @@ if ( !function_exists( 'wp_phone_message_load_widget' ) ) {
         register_widget( 'WpPhoneMessageWidget' );
     }
     add_action( 'widgets_init', 'wp_phone_message_load_widget' );
+}
+
+// plugin uninstallation
+register_uninstall_hook( __FILE__, 'wp_phone_message_uninstall' );
+function wp_phone_message_uninstall() {
+    deletePlugin();
 }
