@@ -12,6 +12,7 @@ if ( !class_exists( 'WpPhoneMessageShortcode' ) ) {
         }
 
         public function renderShortcode($atts){
+            global $shortcode_form;
             include_once( PLUGIN_WPM_PATH . 'views/shortcode-form.php' );
             return $shortcode_form;
         }
