@@ -3,7 +3,7 @@
  * Plugin Name:       WP Phone Message
  * Plugin URI:        https://webmarcello.co.uk/blog/wp-phone-message-plugin/
  * Description:       Send a whatsapp message from your Wordpress website. You can render a message form through shotcode or widget.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Requires at least: 4.5.13
  * Requires PHP:      5.6
  * Author:            Marcello Perri
