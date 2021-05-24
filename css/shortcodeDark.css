@@ -47,7 +47,7 @@
 }
 .whatapp-form .wp-phone-message-button {
     text-transform: uppercase;
-    background: #7BC087;
-    color: white;
+    background-color: #7BC087 !important;
+    color: white !important;
     margin-top: 5px;
 }

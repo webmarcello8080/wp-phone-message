@@ -16,6 +16,10 @@
     letter-spacing: 7px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.whatapp-form .whatapp-text {
+    margin-bottom: 8px;
 }
 .whatapp-form .wp-phone-message-message, 
 .whatapp-form .wp-phone-message-name, 
@@ -47,8 +51,8 @@
 }
 .whatapp-form .wp-phone-message-button {
     background: none;
-    border: solid 2px #474544;
-    color: #474544;
+    border: solid 2px #474544 !important;
+    color: #474544 !important;
     cursor: pointer;
     display: inline-block;
     font-family: 'Helvetica', Arial, sans-serif;
@@ -65,6 +69,6 @@
     transition: all 0.3s;
 }
 .whatapp-form .wp-phone-message-button:hover {
-    background: #474544;
-    color: #F2F3EB;
+    background-color: #474544 !important;
+    color: #F2F3EB !important;
 }

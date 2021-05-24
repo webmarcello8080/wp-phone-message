@@ -59,8 +59,8 @@
     box-shadow: 0 0px 2px #e74c3c !important;
 }
 .whatapp-form .wp-phone-message-button {
-    color: white;
-    background: #e74c3c;
+    color: white !important;
+    background-color: #e74c3c !important;
     cursor: pointer;
     border: 0;
     outline: 0;

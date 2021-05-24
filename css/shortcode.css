@@ -70,9 +70,10 @@
     position: relative;
     display: block;
     padding: 12px 20px 12px 20px;
-    color: #FFF;
+    color: #FFF !important;
     margin: 10px auto;
-    background: #1abc9c;
+    background-color: #1abc9c !important;
+    border-radius: 5px;
     font-size: 18px;
     text-align: center;
     font-style: normal;
@@ -82,5 +83,5 @@
 }
 .whatapp-form .wp-phone-message-button:hover
 {
-	background: #109177;
+	background-color: #109177 !important;
 }
