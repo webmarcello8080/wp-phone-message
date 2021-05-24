@@ -40,6 +40,15 @@
                               </td>
                         </tr>
                         <tr>
+                              <th></th>
+                              <td>
+                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/default_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/dark_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/simple_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/elegant_style.PNG" />
+                              </td>
+                        </tr>
+                        <tr>
                               <th>
                                     <label for="wp-phone-message-css">Add extra CSS :</label>
                               </th>

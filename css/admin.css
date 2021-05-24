@@ -6,6 +6,10 @@
 .wp-phone-message-form .form-description, .wp-phone-message-form .admin-page-title{
   padding-top: 20px;
 }
+.wp-phone-message-form .wp-phone-message-style-img {
+  width: 100px;
+  display: inline-block;
+}
 /* insert flags */
 
 .iti__flag {background-image: url("../js/intl-tel-input/build/img/flags.png");}
