@@ -15,6 +15,7 @@ jQuery(document).ready(function () {
         });
     }
 
-    wp.codeEditor.initialize(jQuery('#wp-phone-message-css'), cm_settings);
-
+    if (jQuery('#wp-phone-message-css').length) {
+        wp.codeEditor.initialize(jQuery('#wp-phone-message-css'), cm_settings);
+    }
 });
