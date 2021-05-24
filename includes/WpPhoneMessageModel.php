@@ -36,11 +36,7 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $dropdown_place = sanitize_text_field( $args['wp-phone-message-dropdown'] );
             $dropdown_active = sanitize_text_field( $args['wp-phone-message-dropdown-active'] );
             $dropdown_mandatory = sanitize_text_field( $args['wp-phone-message-dropdown-mandatory'] );
-            $textarea = '';
-
-            if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
-                $textarea = sanitize_text_field( $args['wp-phone-message-textarea'] );
-            }
+            $textarea = sanitize_text_field( $args['wp-phone-message-textarea'] );
 
             // Shortcode Form Fields
             update_option( 'wp-phone-message-text', $text );
@@ -83,11 +79,7 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             $dropdown_place_widget = sanitize_text_field( $args['wp-phone-message-dropdown-widget'] );
             $dropdown_active_widget = sanitize_text_field( $args['wp-phone-message-dropdown-active-widget'] );
             $dropdown_mandatory_widget = sanitize_text_field( $args['wp-phone-message-dropdown-mandatory-widget'] );
-            $textarea_widget = '';
-
-            if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
-                $textarea_widget = sanitize_text_field( $args['wp-phone-message-textarea-widget'] );
-            }
+            $textarea_widget = sanitize_text_field( $args['wp-phone-message-textarea-widget'] );
 
             // widget form fields
             update_option( 'wp-phone-message-button-widget', $button_widget );
@@ -111,16 +103,11 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
         }
 
         public function setStyleData($args){
-            $css = '';
-            $style = '';
-            
-            if ( wp_phone_message_wpm_fs()->is__premium_only() ) {
-                $css = $args['wp-phone-message-css'];
-                $style = sanitize_text_field( $args['wp-phone-message-style'] );
+            $css = $args['wp-phone-message-css'];
+            $style = sanitize_text_field( $args['wp-phone-message-style'] );
 
-                if($args['wp-phone-message-css']){
-                    file_put_contents( PLUGIN_WPM_PATH . 'css/custom_user.css', $args['wp-phone-message-css']);
-                }
+            if($args['wp-phone-message-css']){
+                file_put_contents( PLUGIN_WPM_PATH . 'css/custom_user.css', $args['wp-phone-message-css']);
             }
 
             update_option( 'wp-phone-message-css', $css );

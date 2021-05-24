@@ -74,7 +74,6 @@
                         <tr>
                               <th>
                                     <label for="wp-phone-message-extra">Extra Area in ShortCode Form: </label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-extra-active"
@@ -99,7 +98,6 @@
                         <tr>
                               <th scope="row">
                                     <label for="wp-phone-message-email">Email Address Area in ShortCode Form: </label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-email-active"
@@ -124,7 +122,6 @@
                         <tr>
                               <th scope="row">
                                     <label for="wp-phone-message-dropdown">Dropdown Area in ShortCode Form: </label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input type="checkbox" id="wp-phone-message-dropdown-active"
@@ -150,7 +147,6 @@
                         <tr>
                               <th scope="row">
                                     <label for="wp-phone-message-textarea">Text Area Placeholder in ShortCode Form: </label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <input name="wp-phone-message-textarea" type="text" id="wp-phone-message-textarea"

@@ -15,7 +15,6 @@
                         <tr>
                               <th>
                                     <label for="wp-phone-message-style">Select the form Style :</label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <label>
@@ -43,7 +42,6 @@
                         <tr>
                               <th>
                                     <label for="wp-phone-message-css">Add extra CSS :</label>
-                                    <?= WpPhoneMessageForm::isPremiumOnly(); ?>
                               </th>
                               <td>
                                     <textarea name="wp-phone-message-css" id="wp-phone-message-css"

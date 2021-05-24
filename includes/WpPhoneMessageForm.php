@@ -4,18 +4,6 @@ if ( !class_exists( 'WpPhoneMessageForm' ) ) {
 
    class WpPhoneMessageForm {
       
-      public static function isPremiumOnly() {
-         if ( wp_phone_message_wpm_fs()->is_not_paying() ) {
-            ?>
-            <p class="description form-messages" >This Option is available only for Premium customers.
-               <a href="<?= wp_phone_message_wpm_fs()->get_upgrade_url() ?>">
-               <?= __('Upgrade Now!', 'wp-phone-message')  ?>
-               </a>
-            </p>
-            <?php
-         }
-      }
-
       public static function getSettingsTabs($active_tab){
          ?>
             <h2 class="nav-tab-wrapper">

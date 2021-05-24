@@ -39,9 +39,3 @@ if ( !function_exists( 'wp_phone_message_load_widget' ) ) {
     }
     add_action( 'widgets_init', 'wp_phone_message_load_widget' );
 }
-
-// plugin uninstallation
-register_uninstall_hook( __FILE__, 'wp_phone_message_uninstall' );
-function wp_phone_message_uninstall() {
-    deletePlugin();
-}
