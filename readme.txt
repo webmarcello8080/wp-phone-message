@@ -5,7 +5,6 @@ Requires at least: 4.5.13
 Tested up to: 5.6
 Stable tag: trunk
 Requires PHP: 5.6
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Wordpress Plugin made to send a Whatsapp message from your Wordpress website.
 
