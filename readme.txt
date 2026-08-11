@@ -2,9 +2,9 @@
 Contributors: webmarcello
 Tags: message, form, whatsapp, shortcode, widget, phone, text
 Requires at least: 4.5.13
-Tested up to: 5.6
+Tested up to: 7.0.3
 Stable tag: trunk
-Requires PHP: 5.6
+Requires PHP: 8.0
 
 Wordpress Plugin made to send a Whatsapp message from your Wordpress website.
 
