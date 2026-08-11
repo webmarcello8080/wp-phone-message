@@ -46,7 +46,7 @@ WP Phone Message automatically with change your whatsapp phone number and your i
 
 Here is your WP Phone Message setting:
 
-![WP Phone Message settings](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-settings.jpg)
+![WP Phone Message settings](https://webmarcello.co.uk/app/uploads/2020/02/setting_tab.png)
 
 ##  Shortcode
 Using WP Phone Message is very simple and it doesn't require any API Key or registration.
@@ -55,19 +55,28 @@ In order to display the Whatsapp message form on your page please add the shortc
 
 Here is your WP Phone Message form:
 
-![WP Phone Message form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-message-form.jpg)
+![WP Phone Message form](https://webmarcello.co.uk/app/uploads/2020/02/shortcode_tab-1024x536.png)
 
 ## Widget
 You can also display the WP Phone Message form through a widget:
 
 Here is your WP Phone Message widget form:
 
-![WP Phone Message widget form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget.jpg)
+![WP Phone Message widget form](https://webmarcello.co.uk/app/uploads/2020/02/widget_tab-1024x531.png)
 
 
 Here is your WP Phone Message widget:
 
-![WP Phone Message form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget-form.jpg)
+![WP Phone Message form](https://webmarcello.co.uk/app/uploads/2020/02/widget_tab-1024x531.png)
+
+## Styles
+In Wp Phone Message, you have also the possibility to choose the style of the form and eventually insert your own style through a CodeMirror textarea. In order to configure the Style, please navigate to the WordPress dashboard and go to Settings => Wp Phone Message, then click on the first tab “Style”, here you have the possibility of:
+
+* Select the style from 4 different types
+* Select your website style, this option won’t add any CSS to your frontend website
+* Add extra CSS through a CodeMirror textarea, this style will be added to your website in a CSS file, it won’t be hardcoded.
+
+![WP Phone Message form](src="https://webmarcello.co.uk/app/uploads/2020/02/style_tab-1024x496.png")
 
 ## NOTE From Whatsapp API
 How to add international contacts' phone numbers

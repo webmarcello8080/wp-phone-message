@@ -23,10 +23,10 @@ From February 2021, WP Phone Message becomes Premium, the basic functions of the
 * Enter form text
 * Enter form bottom text
 * Possibility to add name field in shortcode form 
-* Possibility to add extra field in shortcode form (Premium)
+* Possibility to add extra field in shortcode form 
 * Possibility to add phone number field in shortcode form 
-* Possibility to add email address field in shortcode form (Premium)
-* Possibility to add a dropdown field in shortcode form (Premium)
+* Possibility to add email address field in shortcode form 
+* Possibility to add a dropdown field in shortcode form 
 * Making fields mandatory
 * Possibility to set fields placeholder
 
@@ -35,17 +35,16 @@ From February 2021, WP Phone Message becomes Premium, the basic functions of the
 * Enter the form title
 * Enter form text
 * Possibility to add name field
-* Possibility to add extra field (Premium)
+* Possibility to add extra field 
 * Possibility to add phone number field
-* Possibility to add email address field (Premium)
-* Possibility to add a dropdown field (Premium)
+* Possibility to add email address field 
+* Possibility to add a dropdown field 
 * Making fields mandatory
 * Possibility to set fields placeholder
 
 The widget will send the whatsapp to the phone number set on the setting section.
 
 = Styles: =
-(Premium)
 You can now choose from 4 different form styles.
 You can also add your own CSS style that will be added to the code as file.
 
@@ -95,7 +94,9 @@ e.g.
 == Changelog ==
 
 = 1.1.0 =
-* Premium Version realeased
+* New CSS style for 4 type of designs
+* Create own style and add own CSS on backend
+* Minified CSS/custom CSS and JS 
 
 = 1.0.7 =
 * Send phone number to JS through wp_localize
@@ -127,7 +128,7 @@ e.g.
 * Possibility to set fields placeholder
 
 = 1.0.2 =
-* Minifing CSS and JS files
+* Minified CSS and JS files
 
 = 1.0.1 =
 * Fixing compatibility issue with Wordpress 5.3.x 
