@@ -1,5 +1,6 @@
 === WP Phone Message ===
 Contributors: webmarcello
+Plugin Name: WP Phone Message
 Tags: message, form, whatsapp, shortcode, widget, phone, text
 Requires at least: 4.5.13
 Tested up to: 7.0.3
