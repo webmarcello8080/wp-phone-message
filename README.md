@@ -51,7 +51,7 @@ Here is your MY Phone Message WP setting:
 ##  Shortcode
 Using MY Phone Message WP is very simple and it doesn't require any API Key or registration.
 Please complete the form below. International Prefix and Whatsapp phone number are required.
-In order to display the Whatsapp message form on your page please add the shortcode [wp-phone-message] to your page/post content.
+In order to display the Whatsapp message form on your page please add the shortcode [my-phone-message-wp] to your page/post content.
 
 Here is your MY Phone Message WP form:
 

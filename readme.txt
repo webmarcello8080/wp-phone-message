@@ -3,7 +3,7 @@ Contributors: webmarcello
 Tags: message, form, whatsapp, shortcode, widget, phone, text
 Requires at least: 4.5.13
 Tested up to: 7.0
-Stable tag: 1.0
+Stable tag: 1.1.0
 Requires PHP: 8.0
 License: GPLv2 or later
 
@@ -58,7 +58,7 @@ MY Phone Message WP automatically with change your whatsapp phone number and you
 
 Using MY Phone Message WP is very simple and it doesn't require any API Key or registration. 
 Please complete the form below. International Prefix and Whatsapp phone number are required. 
-In order to display the Whatsapp message form on your page please add the shortcode [wp-phone-message] to your page/post content.
+In order to display the Whatsapp message form on your page please add the shortcode [my-phone-message-wp] to your page/post content.
 
 == Widget ==
 
