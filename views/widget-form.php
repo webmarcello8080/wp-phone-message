@@ -18,8 +18,8 @@
             echo WpPhoneMessageForm::getDropdown('wp-phone-message-dropdown', 'wp-phone-message-widget-dropdown', get_option('wp-phone-message-dropdown-widget'), get_option('wp-phone-message-dropdown-mandatory-widget'));
         }
         ?>
-        <textarea class="wp-phone-message-message" id="wp-phone-message-widget-message" placeholder="<?= get_option('wp-phone-message-textarea-widget'); ?>" required></textarea>
+        <textarea class="wp-phone-message-message" id="wp-phone-message-widget-message" placeholder="<?php echo get_option('wp-phone-message-textarea-widget'); ?>" required></textarea>
         <p class="whatapp-error" id="whatapp-widget-error" ></p>
-        <input type="submit" class="wp-phone-message-button" id="wp-phone-message-widget-button" value="<?= get_option('wp-phone-message-button-widget') ?? 'Send Message'; ?>" />
+        <input type="submit" class="wp-phone-message-button" id="wp-phone-message-widget-button" value="<?php echo get_option('wp-phone-message-button-widget') ?? 'Send Message'; ?>" />
     </form>
 </div>

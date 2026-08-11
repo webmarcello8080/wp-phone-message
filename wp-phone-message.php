@@ -5,7 +5,7 @@
  * Description:       Send a whatsapp message from your Wordpress website. You can render a message form through shotcode or widget. In order to display the Whatsapp message form on your page please add the shortcode <strong>[my-phone-message-wp]</strong> to your page/post content.
  * Version:           1.1.0
  * Requires at least: 4.5.13
- * Tested up to:      7.0.3
+ * Tested up to:      7.0
  * Requires PHP:      8.0
  * Author:            Marcello Perri
  * Author URI:        https://webmarcello.co.uk

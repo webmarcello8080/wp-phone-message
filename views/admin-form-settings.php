@@ -8,7 +8,7 @@
 
       <form  class="wp-phone-message-form" method="post" action="<?php echo esc_html( admin_url( 'admin-post.php' ) ); ?>?">
 
-            <h1 class="admin-page-title"><?= __( 'MY Phone Message WP General Settings', 'my-phone-message-wp' ); ?></h1>
+            <h1 class="admin-page-title"><?php echo __( 'MY Phone Message WP General Settings', 'my-phone-message-wp' ); ?></h1>
 
             <div class="form-description">
                   Using MY Phone Message WP is very simple and it doesn't require any API Key or registration.<br />
