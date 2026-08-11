@@ -18,8 +18,8 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function adminMenu(): void {
             add_options_page(
-                __('WP Phone Message Settings', 'wp-phone-message'),
-                __('WP Phone Message', 'wp-phone-message'),
+                __('MY Phone Message WP Settings', 'wp-phone-message'),
+                __('MY Phone Message WP', 'wp-phone-message'),
                 'manage_options',
                 'wp-phone-message-admin',
                 array( $this, 'adminPage' ),
@@ -117,7 +117,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
         }
 
         private function adminCallback() : void { // Section Callback
-            echo '<p>This section is part of WP Phone Message Plugin</p>';
+            echo '<p>This section is part of MY Phone Message WP Plugin</p>';
         }
         
         private function cleanPhoneNumber(null|array $args) : string {

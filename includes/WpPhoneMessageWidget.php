@@ -11,7 +11,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
             'WpPhoneMessageWidget', 
             
             // Widget name will appear in UI
-            __('WP Phone Message Widget', 'wp-phone-message'), 
+            __('MY Phone Message WP Widget', 'wp-phone-message'), 
             
             // Widget description
             array( 'description' => __( 'Display Whatsapp message form on widget', 'wp-phone-message' ), ) 

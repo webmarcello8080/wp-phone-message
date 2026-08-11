@@ -8,10 +8,10 @@
 
       <form  class="wp-phone-message-form" method="post" action="<?= esc_html( admin_url( 'admin-post.php' ) ); ?>?">
 
-            <h1 class="admin-page-title"><?= __( 'WP Phone Message General Settings', 'wp-phone-message' ); ?></h1>
+            <h1 class="admin-page-title"><?= __( 'MY Phone Message WP General Settings', 'wp-phone-message' ); ?></h1>
 
             <div class="form-description">
-                  Using WP Phone Message is very simple and it doesn't require any API Key or registration.<br />
+                  Using MY Phone Message WP is very simple and it doesn't require any API Key or registration.<br />
                   Please complete the form below. International Prefix and Whatsapp phone number are required.<br />
                   In order to display the Whatsapp message form on your page please add the shortcode
                   <strong>[wp-phone-message]</strong> to your page/post content.<br />

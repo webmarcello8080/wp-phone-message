@@ -3,7 +3,7 @@ Wordpress Plugin made to send a Whatsapp message from your Wordpress website
 
 ## Description
 
-WP Phone Message is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
+MY Phone Message WP is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
 
 ### Settings include:
 * Enter your international prefix (required)
@@ -37,42 +37,42 @@ The widget will send the whatsapp to the phone number set on the setting section
 ## Installation.
 
 Download the plugin in your computer, explode the ZIP file on your plugin folder in your wordpress website. 
-On your wordpress dashboard, go to Plugins => Installed Plugins, search for WP Phone Message and activate the Plugin.
+On your wordpress dashboard, go to Plugins => Installed Plugins, search for MY Phone Message WP and activate the Plugin.
 
 ### Settings
 
-The WP Phone Message setting are on the wordpress dashboard on Settings => WP Phone Message
-WP Phone Message automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
+The MY Phone Message WP setting are on the wordpress dashboard on Settings => MY Phone Message WP
+MY Phone Message WP automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
 
-Here is your WP Phone Message setting:
+Here is your MY Phone Message WP setting:
 
-![WP Phone Message settings](https://webmarcello.co.uk/app/uploads/2020/02/setting_tab.png)
+![MY Phone Message WP settings](https://webmarcello.co.uk/app/uploads/2020/02/setting_tab.png)
 
 ##  Shortcode
-Using WP Phone Message is very simple and it doesn't require any API Key or registration.
+Using MY Phone Message WP is very simple and it doesn't require any API Key or registration.
 Please complete the form below. International Prefix and Whatsapp phone number are required.
 In order to display the Whatsapp message form on your page please add the shortcode [wp-phone-message] to your page/post content.
 
-Here is your WP Phone Message form:
+Here is your MY Phone Message WP form:
 
-![WP Phone Message form](https://webmarcello.co.uk/app/uploads/2020/02/shortcode_tab-1024x536.png)
+![MY Phone Message WP form](https://webmarcello.co.uk/app/uploads/2020/02/shortcode_tab-1024x536.png)
 
 ## Widget
-You can also display the WP Phone Message form through a widget:
+You can also display the MY Phone Message WP form through a widget:
 
-Here is your WP Phone Message widget form:
+Here is your MY Phone Message WP widget form:
 
-![WP Phone Message widget form](https://webmarcello.co.uk/app/uploads/2020/02/widget_tab-1024x531.png)
+![MY Phone Message WP widget form](https://webmarcello.co.uk/app/uploads/2020/02/widget_tab-1024x531.png)
 
 
 ## Styles
-In Wp Phone Message, you have also the possibility to choose the style of the form and eventually insert your own style through a CodeMirror textarea. In order to configure the Style, please navigate to the WordPress dashboard and go to Settings => Wp Phone Message, then click on the first tab “Style”, here you have the possibility of:
+In MY Phone Message WP, you have also the possibility to choose the style of the form and eventually insert your own style through a CodeMirror textarea. In order to configure the Style, please navigate to the WordPress dashboard and go to Settings => MY Phone Message WP, then click on the first tab “Style”, here you have the possibility of:
 
 * Select the style from 4 different types
 * Select your website style, this option won’t add any CSS to your frontend website
 * Add extra CSS through a CodeMirror textarea, this style will be added to your website in a CSS file, it won’t be hardcoded.
 
-![WP Phone Message form](https://webmarcello.co.uk/app/uploads/2020/02/style_tab-1024x496.png)
+![MY Phone Message WP form](https://webmarcello.co.uk/app/uploads/2020/02/style_tab-1024x496.png)
 
 ## NOTE From Whatsapp API
 How to add international contacts' phone numbers

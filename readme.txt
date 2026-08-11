@@ -1,6 +1,5 @@
-=== WP Phone Message ===
+=== MY Phone Message WP ===
 Contributors: webmarcello
-Plugin Name: WP Phone Message
 Tags: message, form, whatsapp, shortcode, widget, phone, text
 Requires at least: 4.5.13
 Tested up to: 7.0.3
@@ -11,9 +10,9 @@ Wordpress Plugin made to send a Whatsapp message from your Wordpress website.
 
 == Description ==
 
-WP Phone Message is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
+MY Phone Message WP is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
 
-From February 2021, WP Phone Message becomes Premium, the basic functions of the plugin are still free but you have more options and more styles available if you go Premium
+From February 2021, MY Phone Message WP becomes Premium, the basic functions of the plugin are still free but you have more options and more styles available if you go Premium
 
 = Settings include: =
 * Enter your international prefix (required)
@@ -51,18 +50,18 @@ You can also add your own CSS style that will be added to the code as file.
 
 == Settings ==
 
-The WP Phone Message setting are on the wordpress dashboard on Settings => WP Phone Message.
-WP Phone Message automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
+The MY Phone Message WP setting are on the wordpress dashboard on Settings => MY Phone Message WP.
+MY Phone Message WP automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
 
 == Shortcode ==
 
-Using WP Phone Message is very simple and it doesn't require any API Key or registration. 
+Using MY Phone Message WP is very simple and it doesn't require any API Key or registration. 
 Please complete the form below. International Prefix and Whatsapp phone number are required. 
 In order to display the Whatsapp message form on your page please add the shortcode [wp-phone-message] to your page/post content.
 
 == Widget ==
 
-You can also display the WP Phone Message form through a widget
+You can also display the MY Phone Message WP form through a widget
 
 == NOTE From Whatsapp API ==
 
@@ -88,7 +87,7 @@ e.g.
 
 1. Upload the plugin files to the `/wp-content/plugins/wp-phone-message` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Settings -> WP Phone Message screen to configure the plugin
+1. Use the Settings -> MY Phone Message WP screen to configure the plugin
 1. Insert your International Prefix and your whatsapp phone number and click on "Save Changes"
 
 
@@ -145,10 +144,10 @@ e.g.
 
 == Screenshots ==
 
-1. WP Phone Message setting
-2. WP Phone Message form
-3. WP Phone Message widget form
-4. WP Phone Message widget
+1. MY Phone Message WP setting
+2. MY Phone Message WP form
+3. MY Phone Message WP widget form
+4. MY Phone Message WP widget
 
 == Changelog ==
 
