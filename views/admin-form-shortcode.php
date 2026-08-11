@@ -41,7 +41,7 @@
                                           name="wp-phone-message-name-mandatory"
                                           <?= ( get_option('wp-phone-message-name-mandatory') ? 'checked' : '') ?>
                                           value="required">
-                                    <label for="wp-phone-message-name-mandatory">Name Input Area Mandatory</label>
+                                    <label for="wp-phone-message-name-mandatory">Make Name Input Area Mandatory</label>
                               </td>
                               <td>
                                     <input name="wp-phone-message-name" type="text" id="wp-phone-message-name"
@@ -65,7 +65,7 @@
                                           name="wp-phone-message-phone-mandatory"
                                           <?= ( get_option('wp-phone-message-phone-mandatory') ? 'checked' : '') ?>
                                           value="required">
-                                    <label for="wp-phone-message-phone-mandatory">Phone Input Area Mandatory</label>
+                                    <label for="wp-phone-message-phone-mandatory">Make Phone Input Area Mandatory</label>
                               </td>
                               <td>
                                     <input name="wp-phone-message-phone" type="text" id="wp-phone-message-phone"
@@ -89,7 +89,7 @@
                                           name="wp-phone-message-extra-mandatory"
                                           <?= ( get_option('wp-phone-message-extra-mandatory') ? 'checked' : '') ?>
                                           value="required">
-                                    <label for="wp-phone-message-extra-mandatory">Extra Input Area Mandatory</label>
+                                    <label for="wp-phone-message-extra-mandatory">Make Extra Input Area Mandatory</label>
                               </td>
                               <td>
                                     <input name="wp-phone-message-extra" type="text" id="wp-phone-message-extra"
@@ -113,7 +113,7 @@
                                           name="wp-phone-message-email-mandatory"
                                           <?= ( get_option('wp-phone-message-email-mandatory') ? 'checked' : '') ?>
                                           value="required">
-                                    <label for="wp-phone-message-email-mandatory">Email Address Input Area Mandatory</label>
+                                    <label for="wp-phone-message-email-mandatory">Make Email Address Input Area Mandatory</label>
                               </td>
                               <td>
                                     <input name="wp-phone-message-email" type="text" id="wp-phone-message-email"
@@ -137,13 +137,13 @@
                                           name="wp-phone-message-dropdown-mandatory"
                                           <?= ( get_option('wp-phone-message-dropdown-mandatory') ? 'checked' : '') ?>
                                           value="required">
-                                    <label for="wp-phone-message-dropdown-mandatory">Dropdown Input Area Mandatory</label>
+                                    <label for="wp-phone-message-dropdown-mandatory">Make Dropdown Input Area Mandatory</label>
                               </td>
                               <td>
                                     <textarea name="wp-phone-message-dropdown" id="wp-phone-message-dropdown"
                                           class="large-text code"
                                           rows="3"><?= get_option('wp-phone-message-dropdown'); ?></textarea>
-                                    <p class="description" id="wp-phone-message-dropdown-description">The Dropdown input options. Please insert options separated by comma.</p>
+                                    <p class="description" id="wp-phone-message-dropdown-description">The Dropdown input options. Please insert the options separated by comma.</p>
                               </td>
                         </tr>
                         <tr>

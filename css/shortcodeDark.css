@@ -24,6 +24,7 @@
     margin-bottom: 8px;
     width: 100%;
     color: white;
+    box-sizing: border-box;
 }
 .whatapp-form .wp-phone-message-name, 
 .whatapp-form .wp-phone-message-phone,
@@ -50,4 +51,5 @@
     background-color: #7BC087 !important;
     color: white !important;
     margin-top: 5px;
+    padding: 13px;
 }

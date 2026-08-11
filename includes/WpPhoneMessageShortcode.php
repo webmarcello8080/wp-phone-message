@@ -7,11 +7,11 @@ if ( !class_exists( 'WpPhoneMessageShortcode' ) ) {
             add_action( 'init', array( $this, 'registerShortcode' ));
         }
 
-        public function registerShortcode(){
+        public function registerShortcode() : void{
             add_shortcode('wp-phone-message', array( $this, 'renderShortcode' ));
         }
 
-        public function renderShortcode($atts){
+        public function renderShortcode(): string{
             global $shortcode_form;
             include_once( PLUGIN_WPM_PATH . 'views/shortcode-form.php' );
             return $shortcode_form;

@@ -4,7 +4,7 @@ if ( !class_exists( 'WpPhoneMessageForm' ) ) {
 
    class WpPhoneMessageForm {
       
-      public static function getSettingsTabs($active_tab){
+      public static function getSettingsTabs(string|null $active_tab): void {
          ?>
             <h2 class="nav-tab-wrapper">
                <a href="<?= admin_url( 'options-general.php?page=wp-phone-message-admin' ) . '&tab=general_settings' ?>" class="nav-tab <?= $active_tab == 'general_settings' ? 'nav-tab-active' : ''; ?>">General Settings</a>
@@ -15,7 +15,7 @@ if ( !class_exists( 'WpPhoneMessageForm' ) ) {
          <?php
       }
 
-      public static function getDropdown($class, $id, $optionsList, $mandatory){
+      public static function getDropdown(string|null $class, string|null $id, string|null $optionsList, string|null $mandatory): string{
          $arrayOptions = explode(',', $optionsList);
          $arrayOptions = array_map('trim',$arrayOptions);
 

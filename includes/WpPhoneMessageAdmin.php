@@ -16,7 +16,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             $this->model = new WpPhoneMessageModel;
         }
 
-        public function adminMenu() {
+        public function adminMenu(): void {
             add_options_page(
                 __('WP Phone Message Settings', 'wp-phone-message'),
                 __('WP Phone Message', 'wp-phone-message'),
@@ -27,7 +27,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             );
         }
 
-        public function adminPage() {
+        public function adminPage(): void {
             //show the form
             if( isset( $_GET[ 'tab' ] ) ) {
                 $active_tab = $_GET[ 'tab' ];
@@ -63,25 +63,25 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             $this->adminRedirect();
         }
 
-        public function adminShortcodeSave(){
+        public function adminShortcodeSave() : void{
             $this->model->setShortcodeData($_POST);
 
             $this->adminRedirect();
         }
 
-        public function adminWidgetSave(){
+        public function adminWidgetSave() : void{
             $this->model->setWidgetData($_POST);
 
             $this->adminRedirect();
         }
 
-        public function adminStyleSave(){
+        public function adminStyleSave() : void{
             $this->model->setStyleData($_POST);
 
             $this->adminRedirect();
         }
 
-        private function adminRedirect() {
+        private function adminRedirect() : void{
             // redirect at the end of the process
             if(isset( $_POST['_wp_http_referer'] )){
                 // redirect the user to the appropriate page
@@ -98,7 +98,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             }
         }
 
-        public function adminStyle() {
+        public function adminStyle() : void{
             wp_enqueue_style('wp-phone-message-intel-tel', PLUGIN_WPM_URL . 'js/intl-tel-input/build/css/intlTelInput.css', array(), null, 'all' );
             wp_enqueue_script('wp-phone-message-intel-tel', PLUGIN_WPM_URL . 'js/intl-tel-input/build/js/intlTelInput.js' );
             wp_enqueue_style('wp-phone-message-admin', PLUGIN_WPM_URL . 'css/admin.min.css', array(), null, 'all' );
@@ -116,11 +116,11 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             wp_enqueue_style('wp-codemirror');
         }
 
-        private function adminCallback() { // Section Callback
+        private function adminCallback() : void { // Section Callback
             echo '<p>This section is part of WP Phone Message Plugin</p>';
         }
         
-        private function cleanPhoneNumber($args){
+        private function cleanPhoneNumber(null|array $args) : string {
             $prefix = str_replace(' ', '', sanitize_text_field( $args['wp-phone-message-phone-prefix'] ));
             $phone = sanitize_text_field( $args['wp-phone-message-phone-number'] );
 

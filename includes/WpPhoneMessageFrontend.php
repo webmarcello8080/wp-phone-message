@@ -11,7 +11,7 @@ if ( !class_exists( 'WpPhoneMessageFrontend' ) ) {
          $this->pluginModel = new WpPhoneMessageModel;
       }
 
-      public function shortcodeStyle(){
+      public function shortcodeStyle() : void{
          // select style based on setting
          switch( get_option('wp-phone-message-style') ){
             case 'dark': wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcodeDark.min.css', array(), null, 'all' );

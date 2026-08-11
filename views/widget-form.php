@@ -20,6 +20,6 @@
         ?>
         <textarea class="wp-phone-message-message" id="wp-phone-message-widget-message" placeholder="<?= get_option('wp-phone-message-textarea-widget'); ?>" required></textarea>
         <p class="whatapp-error" id="whatapp-widget-error" ></p>
-        <input type="submit" class="wp-phone-message-button" id="wp-phone-message-widget-button" value="<?= get_option('wp-phone-message-button-widget'); ?>" />
+        <input type="submit" class="wp-phone-message-button" id="wp-phone-message-widget-button" value="<?= get_option('wp-phone-message-button-widget') ?? 'Send Message'; ?>" />
     </form>
 </div>

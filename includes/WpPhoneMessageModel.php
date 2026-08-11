@@ -3,7 +3,7 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
 
     class WpPhoneMessageModel {
 
-        public function setSettingsData($args){
+        public function setSettingsData(null|array$args) : void{
 
             $phone = sanitize_text_field( $args['wp-phone-message-phone-number'] );
             $prefix = (int) str_replace(' ', '', sanitize_text_field( $args['wp-phone-message-phone-prefix'] ));
@@ -17,7 +17,7 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
 
         }
 
-        public function setShortcodeData($args){
+        public function setShortcodeData(null|array $args) : void{
             // Shortcode Form Fields
             $text = sanitize_text_field( $args['wp-phone-message-text'] );
             $button = sanitize_text_field( $args['wp-phone-message-button'] );
@@ -60,7 +60,7 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
 
         }
 
-        public function setWidgetData($args){
+        public function setWidgetData(null|array $args) : void{
 
             // widget form fields
             $button_widget = sanitize_text_field( $args['wp-phone-message-button-widget'] );
@@ -102,7 +102,7 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
 
         }
 
-        public function setStyleData($args){
+        public function setStyleData(null|array $args) : void{
             $css = $args['wp-phone-message-css'];
             $style = sanitize_text_field( $args['wp-phone-message-style'] );
 
@@ -114,11 +114,11 @@ if ( !class_exists( 'WpPhoneMessageModel' ) ) {
             update_option( 'wp-phone-message-style', $style );
         }
 
-        public function setMessage($message){
+        public function setMessage(null|string $message) : void{
             update_option( 'wp-phone-message-form-message', $message);
         }
 
-        public function getFullPhoneNumber(){
+        public function getFullPhoneNumber() : string{
             return get_option( 'wp-phone-message-full-phone-number' );
         }
     }

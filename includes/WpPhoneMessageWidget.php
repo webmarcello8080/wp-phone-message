@@ -20,7 +20,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
         
         // Creating widget front-end
         
-        public function widget( $args, $instance ) {
+        public function widget($args, $instance ) : void {
             $title = apply_filters( 'widget_title', $instance['title'] );
             $text = $instance['text'] ;
 
@@ -36,7 +36,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
         }
                 
         // Widget Backend 
-        public function form( $instance ) {
+        public function form( $instance ) : void {
             if ( isset( $instance[ 'title' ] ) ) {
                 $title = $instance[ 'title' ];
             }
@@ -55,7 +55,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
         }
             
         // Updating widget replacing old instances with new
-        public function update( $new_instance, $old_instance ) {
+        public function update( $new_instance, $old_instance ) : array {
             $instance = array();
             $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
             $instance['text'] = ( ! empty( $new_instance['text'] ) ) ? strip_tags( $new_instance['text'] ) : '';
