@@ -1,14 +1,14 @@
 <?php
     if( current_user_can( 'edit_users' ) ){
-    ?>
+?>
 <div class="wrap">
-      <h1 class="admin-page-title"><?= esc_html( get_admin_page_title() ); ?></h1>
+      <h1 class="admin-page-title"><?php echo esc_html( get_admin_page_title() ); ?></h1>
 
-      <?= WpPhoneMessageForm::getSettingsTabs($active_tab); ?>
+      <?php WpPhoneMessageForm::getSettingsTabs($active_tab); ?>
 
-      <form  class="wp-phone-message-form" method="post" action="<?= esc_html( admin_url( 'admin-post.php' ) ); ?>?">
+      <form  class="wp-phone-message-form" method="post" action="<?php echo esc_html( admin_url( 'admin-post.php' ) ); ?>?">
 
-            <h1 class="admin-page-title"><?= __( 'Managing the Style of the Form', 'wp-phone-message' ); ?></h1>
+            <h1 class="admin-page-title"><?= __( 'Managing the Style of the Form', 'my-phone-message-wp' ); ?></h1>
 
             <table class="form-table">
                   <tbody>
@@ -18,23 +18,23 @@
                               </th>
                               <td>
                                     <label>
-                                          <input type="radio" name="wp-phone-message-style" value="" <?= (get_option('wp-phone-message-style')== '') ?  "checked" : "" ;  ?>  />
+                                          <input type="radio" name="wp-phone-message-style" value="" <?php echo (get_option('wp-phone-message-style')== '') ?  "checked" : "" ;  ?>  />
                                           <span class="date-time-text format-i18n">Default Style</span>
                                     </label>
                                     <label>
-                                          <input type="radio" name="wp-phone-message-style" value="dark" <?= (get_option('wp-phone-message-style')== 'dark') ?  "checked" : "" ;  ?>  />
+                                          <input type="radio" name="wp-phone-message-style" value="dark" <?php echo (get_option('wp-phone-message-style')== 'dark') ?  "checked" : "" ;  ?>  />
                                           <span class="date-time-text format-i18n">Dark Style</span>
                                     </label>
                                     <label>
-                                          <input type="radio" name="wp-phone-message-style" value="simple" <?= (get_option('wp-phone-message-style')== 'simple') ?  "checked" : "" ;  ?>  />
+                                          <input type="radio" name="wp-phone-message-style" value="simple" <?php echo (get_option('wp-phone-message-style')== 'simple') ?  "checked" : "" ;  ?>  />
                                           <span class="date-time-text format-i18n">Simple Style</span>
                                     </label>
                                     <label>
-                                          <input type="radio" name="wp-phone-message-style" value="elegant" <?= (get_option('wp-phone-message-style')== 'elegant') ?  "checked" : "" ;  ?>  />
+                                          <input type="radio" name="wp-phone-message-style" value="elegant" <?php echo (get_option('wp-phone-message-style')== 'elegant') ?  "checked" : "" ;  ?>  />
                                           <span class="date-time-text format-i18n">Elegant Style</span>
                                     </label>
                                     <label>
-                                          <input type="radio" name="wp-phone-message-style" value="none" <?= (get_option('wp-phone-message-style')== 'none') ?  "checked" : "" ;  ?>  />
+                                          <input type="radio" name="wp-phone-message-style" value="none" <?php echo (get_option('wp-phone-message-style')== 'none') ?  "checked" : "" ;  ?>  />
                                           <span class="date-time-text format-i18n">Your Website Style</span>
                                     </label>
                               </td>
@@ -42,10 +42,10 @@
                         <tr>
                               <th></th>
                               <td>
-                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/default_style.PNG" />
-                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/dark_style.PNG" />
-                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/simple_style.PNG" />
-                                    <img class="wp-phone-message-style-img" src="<?= PLUGIN_WPM_URL ?>/img/elegant_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?php echo PLUGIN_WPM_URL ?>/img/default_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?php echo PLUGIN_WPM_URL ?>/img/dark_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?php echo PLUGIN_WPM_URL ?>/img/simple_style.PNG" />
+                                    <img class="wp-phone-message-style-img" src="<?php echo PLUGIN_WPM_URL ?>/img/elegant_style.PNG" />
                               </td>
                         </tr>
                         <tr>
@@ -55,7 +55,7 @@
                               <td>
                                     <textarea name="wp-phone-message-css" id="wp-phone-message-css"
                                           class="large-text code"
-                                          rows="3"><?= get_option('wp-phone-message-css'); ?></textarea>
+                                          rows="3"><?php echo get_option('wp-phone-message-css'); ?></textarea>
                                     <p class="description" id="wp-phone-message-css-description">Write your own CSS to change the design of the form.</p>
                               </td>
                         </tr>
@@ -65,7 +65,7 @@
             <div class="form-messages">
                   <?php echo get_option('wp-phone-message-form-message'); ?>
                   <input type="hidden" id="wp-phone-message-full-phone-number"
-                        value="<?= get_option('wp-phone-message-full-phone-number'); ?>" />
+                        value="<?php echo get_option('wp-phone-message-full-phone-number'); ?>" />
             </div>
             <input type="hidden" name="action" value="wp-phone-message-style">
             <?php
@@ -78,6 +78,6 @@
     }
     else {
       ?>
-      <p><?php __("You are not authorized to perform this operation.", 'wp-phone-message') ?></p>
+      <p><?php __("You are not authorized to perform this operation.", 'my-phone-message-wp') ?></p>
       <?php   
     }

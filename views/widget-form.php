@@ -1,6 +1,6 @@
 <div class="whatapp-wrapper">
     <form class="whatapp-form" id="whatapp-widget-form">
-        <p class="whatapp-text"><?= $text; ?></p>
+        <p class="whatapp-text"><?php echo esc_html( $text ); ?></p>
         <?php
         if(get_option('wp-phone-message-name-active-widget')){
             echo '<input type="text" class="wp-phone-message-name" id="wp-phone-message-widget-name" placeholder="' . get_option('wp-phone-message-name-widget') . '"  ' . get_option('wp-phone-message-name-mandatory-widget') . ' />';

@@ -8,7 +8,7 @@ if ( !class_exists( 'WpPhoneMessageShortcode' ) ) {
         }
 
         public function registerShortcode() : void{
-            add_shortcode('wp-phone-message', array( $this, 'renderShortcode' ));
+            add_shortcode('my-phone-message-wp', array( $this, 'renderShortcode' ));
         }
 
         public function renderShortcode(): string{

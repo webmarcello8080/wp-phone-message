@@ -28,5 +28,4 @@ $shortcode_form .= '<p class="whatapp-error" id="whatapp-error" ></p>';
 $shortcode_form .= '<input type="submit" class="wp-phone-message-button" id="wp-phone-message-button" value="' . (get_option('wp-phone-message-button') ? get_option('wp-phone-message-button') : $default_button_text) . '" />';
 $shortcode_form .= '</form>';
 $shortcode_form .= '</div>';
-
 ?>

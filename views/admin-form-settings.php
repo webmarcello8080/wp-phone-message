@@ -2,13 +2,13 @@
     if( current_user_can( 'edit_users' ) ){
 ?>
 <div class="wrap">
-      <h1 class="admin-page-title"><?= esc_html( get_admin_page_title() ); ?></h1>
+      <h1 class="admin-page-title"><?php echo esc_html( get_admin_page_title() ); ?></h1>
 
-      <?= WpPhoneMessageForm::getSettingsTabs($active_tab); ?>
+      <?php WpPhoneMessageForm::getSettingsTabs($active_tab); ?>
 
-      <form  class="wp-phone-message-form" method="post" action="<?= esc_html( admin_url( 'admin-post.php' ) ); ?>?">
+      <form  class="wp-phone-message-form" method="post" action="<?php echo esc_html( admin_url( 'admin-post.php' ) ); ?>?">
 
-            <h1 class="admin-page-title"><?= __( 'MY Phone Message WP General Settings', 'wp-phone-message' ); ?></h1>
+            <h1 class="admin-page-title"><?= __( 'MY Phone Message WP General Settings', 'my-phone-message-wp' ); ?></h1>
 
             <div class="form-description">
                   Using MY Phone Message WP is very simple and it doesn't require any API Key or registration.<br />
@@ -26,7 +26,7 @@
                               <td>
                                     <input name="wp-phone-message-phone-prefix" type="text"
                                           id="wp-phone-message-phone-prefix"
-                                          value="<?= get_option('wp-phone-message-phone-prefix'); ?>"
+                                          value="<?php echo get_option('wp-phone-message-phone-prefix'); ?>"
                                           class="regular-text" />
                                     <p class="description" id="wp-phone-message-phone-prefix-description">Select the international prefix of your Whatsapp phone number.
                                     </p>
@@ -41,7 +41,7 @@
                               <td>
                                     <input name="wp-phone-message-phone-number" type="text"
                                           id="wp-phone-message-phone-number"
-                                          value="<?= get_option('wp-phone-message-phone-number'); ?>"
+                                          value="<?php echo get_option('wp-phone-message-phone-number'); ?>"
                                           class="regular-text" />
                                     <p class="description" id="wp-phone-message-phone-number-description">Insert a valid Whatsapp number that will receive the messages.<br />
                                           <strong>Please be sure to insert a valid phone number without international prefix.</strong>
@@ -56,7 +56,7 @@
                               </th>
                               <td>
                                     <input name="wp-phone-message-title" type="text" id="wp-phone-message-title"
-                                          value="<?= get_option('wp-phone-message-title'); ?>" class="regular-text" />
+                                          value="<?php echo get_option('wp-phone-message-title'); ?>" class="regular-text" />
                                     <p class="description" id="wp-phone-message-title-description">The title will appear on the top of the message form.</p>
                               </td>
                         </tr>
@@ -64,9 +64,9 @@
             </table>
 
             <div class="form-messages">
-                  <?= get_option('wp-phone-message-form-message'); ?>
+                  <?php echo get_option('wp-phone-message-form-message'); ?>
                   <input type="hidden" id="wp-phone-message-full-phone-number"
-                        value="<?= get_option('wp-phone-message-full-phone-number'); ?>" />
+                        value="<?php echo get_option('wp-phone-message-full-phone-number'); ?>" />
             </div>
             <input type="hidden" name="action" value="wp-phone-message-settings">
             <?php
@@ -79,7 +79,7 @@
     }
     else {
       ?>
-      <p><?php __("You are not authorized to perform this operation.", 'wp-phone-message') ?></p>
+      <p><?php __("You are not authorized to perform this operation.", 'my-phone-message-wp') ?></p>
       <?php   
     }
 ?>

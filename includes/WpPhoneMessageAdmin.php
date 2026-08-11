@@ -18,8 +18,8 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function adminMenu(): void {
             add_options_page(
-                __('MY Phone Message WP Settings', 'wp-phone-message'),
-                __('MY Phone Message WP', 'wp-phone-message'),
+                __('MY Phone Message WP Settings', 'my-phone-message-wp'),
+                __('MY Phone Message WP', 'my-phone-message-wp'),
                 'manage_options',
                 'wp-phone-message-admin',
                 array( $this, 'adminPage' ),
@@ -108,7 +108,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
             $cm_settings['codeEditor'] = wp_enqueue_code_editor(
                 array(
                     'type' => 'text/css',
-                    'plugin' => 'wp-phone-message'
+                    'plugin' => 'my-phone-message-wp'
                 ));
             wp_localize_script('jquery', 'cm_settings', $cm_settings);
 
